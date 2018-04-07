@@ -1,0 +1,14 @@
+Package: dtc
+Version: 1.3.0+git0+27cdc1b16f86f970c3c049795d4e71ad531cca3d-r3.1.2
+Description: Device Tree Compiler
+ The Device Tree Compiler is a tool used to manipulate the Open-Firmware-
+ like device tree used by PowerPC kernels.
+Section: bootloader
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2 | BSD
+Architecture: armv7ahf-vfp-neon
+OE: dtc
+Homepage: unknown
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Source: git://www.jdl.com/software/dtc.git;protocol=git file://make_install.patch file://0001-dtc-Dynamic-symbols-fixup-support.patch

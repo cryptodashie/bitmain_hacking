@@ -1,0 +1,13 @@
+Package: libgcc1
+Version: linaro-4.7-r2013.07.2
+Description: libgcc version linaro-4.7-r2013.07
+ The GNU cc and gcc C compilers.
+Section: devel
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPL-3.0-with-GCC-exception & GPLv3
+Architecture: armv7ahf-vfp-neon
+OE: libgcc
+Homepage: http://www.gnu.org/software/gcc/
+Depends: libc6 (>= 2.17)
+Source: http://releases.linaro.org/13.07/components/toolchain/gcc-linaro/4.7/gcc-linaro-4.7-2013.07.tar.bz2 file://gcc-4.3.1-ARCH_FLAGS_FOR_TARGET.patch file://64bithack.patch file://optional_libstdc.patch file://use-defaults.h-and-t-oe-in-B.patch file://fix-g++-sysroot.patch

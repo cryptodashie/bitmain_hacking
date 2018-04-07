@@ -1,0 +1,14 @@
+#!/bin/sh
+OPTS=""
+
+if [ -n "$D" ]; then
+    OPTS="--root=$D"
+fi
+
+if type systemctl >/dev/null 2>/dev/null; then
+	systemctl $OPTS enable ntpd.service
+
+	if [ -z "$D" -a "enable" = "enable" ]; then
+		systemctl restart ntpd.service
+	fi
+fi

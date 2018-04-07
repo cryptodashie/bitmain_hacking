@@ -1,0 +1,13 @@
+Package: libgnutls26
+Version: 2.12.23-r8.4.2
+Description: gnutls version 2.12.23-r8.4
+ GNU Transport Layer Security Library
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: LGPLv2.1+
+Architecture: armv7ahf-vfp-neon
+OE: gnutls
+Homepage: http://www.gnu.org/software/gnutls/
+Depends: libcap2 (>= 2.22), libz1 (>= 1.2.7), libc6 (>= 2.17), libtasn1-3 (>= 2.14), libgpg-error0 (>= 1.11), libgcrypt11 (>= 1.5.0)
+Source: ftp://ftp.gnutls.org/gcrypt/gnutls/v2.12/gnutls-2.12.23.tar.bz2 file://gnutls-openssl.patch file://correct_rpl_gettimeofday_signature.patch file://configure-fix.patch file://avoid_AM_PROG_MKDIR_P_warning_error_with_automake_1.12.patch file://fix-gettext-version.patch

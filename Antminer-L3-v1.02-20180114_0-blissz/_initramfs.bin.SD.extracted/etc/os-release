@@ -1,0 +1,6 @@
+VERSION="v2013.06"
+NAME="Angstrom"
+ID="angstrom"
+PRETTY_NAME="The Ångström Distribution"
+ANSI_COLOR="1;35"
+HOME_URL="http://www.angstrom-distribution.org"

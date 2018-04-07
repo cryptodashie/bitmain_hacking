@@ -1,0 +1,1 @@
+../init.d/bitmainer_setup.sh

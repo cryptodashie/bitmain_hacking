@@ -1,0 +1,13 @@
+Package: minermonitor
+Version: 1.0-r0.9
+Description: minermonitor version 1.0-r0
+ Daemon helloword
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: CLOSED
+Architecture: armv7ahf-vfp-neon
+OE: minermonitor
+Homepage: unknown
+Depends: libcurl5 (>= 7.29.0), libcrypto1.0.0 (>= 1.0.1e), libc6 (>= 2.17), libssl1.0.0 (>= 1.0.1e)
+Source: file://minermonitor-1.0/*

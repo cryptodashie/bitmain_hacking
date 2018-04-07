@@ -1,0 +1,12 @@
+Package: sysvinit-inittab
+Version: 2.88dsf-r10.14
+Description: sysvinit-inittab version 2.88dsf-r10
+ Inittab for sysvinit
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2
+Architecture: beaglebone
+OE: sysvinit-inittab
+Homepage: unknown
+Source: file://inittab

@@ -1,0 +1,12 @@
+Package: opkg-config-base
+Version: 1.0-r1.2
+Description: opkg-config-base version 1.0-r1
+ Base configuration files for opkg
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: MIT
+Architecture: beaglebone
+OE: opkg-config-base
+Homepage: unknown
+Source: None

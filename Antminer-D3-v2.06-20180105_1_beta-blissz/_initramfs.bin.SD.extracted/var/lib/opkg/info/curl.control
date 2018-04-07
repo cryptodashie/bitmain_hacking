@@ -1,0 +1,13 @@
+Package: curl
+Version: 7.29.0-r1.2
+Description: curl version 7.29.0-r1
+ Command line tool and library for client-side URL transfers.
+Section: console/network
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: MIT
+Architecture: armv7ahf-vfp-neon
+OE: curl
+Homepage: http://curl.haxx.se/
+Depends: libcurl5 (>= 7.29.0), libz1 (>= 1.2.7), libc6 (>= 2.17)
+Source: http://curl.haxx.se/download/curl-7.29.0.tar.bz2 file://pkgconfig_fix.patch file://0001-Fix-NULL-pointer-reference-when-closing-an-unused-mu.patch file://configure_ac.patch

@@ -1,0 +1,5 @@
+/usr/bin/fdtdump
+/usr/lib/libfdt.so.1
+/usr/bin/fdtget
+/usr/bin/fdtput
+/usr/bin/dtc

@@ -1,0 +1,3 @@
+/usr/bin/monitor-ipsig
+/etc/rcS.d/S100monitor-ipsig.sh
+/etc/init.d/monitor-ipsig.sh

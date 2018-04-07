@@ -1,0 +1,8 @@
+#!/bin/sh
+if type systemctl >/dev/null 2>/dev/null; then
+	if [ -z "$D" ]; then
+		systemctl stop ntpdate.service
+	fi
+
+	systemctl disable ntpdate.service
+fi

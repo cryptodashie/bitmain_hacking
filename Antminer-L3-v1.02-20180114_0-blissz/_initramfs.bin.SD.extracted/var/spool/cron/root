@@ -1,0 +1,1 @@
+30 * * * *    /usr/bin/ntpdate-sync silent

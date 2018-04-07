@@ -1,0 +1,798 @@
+Package: shadow-securetty
+Version: 4.1.4.3-r2.2
+Status: install ok installed
+Architecture: beaglebone
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: pam-plugin-mail
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libpam
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17)
+Recommends: libpam-runtime
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: lighttpd-module-indexfile
+Version: 1.4.32-r1.450
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: busybox-syslog
+Version: 1.20.2-r8.4
+Depends: opkg
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Conffiles:
+ /etc/syslog-startup.conf.busybox 638acd6813015513fbd0c91d5918be4e
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: libwrap0
+Version: 7.6-r10.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: avahi
+Version: 0.6.31-r7.1.2
+Recommends: update-rc.d, libnss-mdns
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: libc6
+Version: 2.17-r3.2
+Provides: rtld(GNU_HASH), glibc
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: opkg
+Version: 1:0.1.8+svnr649-r13.0.2
+Depends: opkg-config-base, libopkg1 (>= 0.1.8+svnr649), libc6 (>= 2.17), opkg
+Replaces: opkg-nogpg
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: busybox
+Version: 1.20.2-r8.4
+Depends: libc6 (>= 2.17), opkg
+Recommends: update-rc.d, busybox-syslog, busybox-udhcpc
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169268
+
+Package: libssl1.0.0
+Version: 1.0.1e-r15.1.2
+Depends: libcrypto1.0.0 (>= 1.0.1e), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: opkg-config-base
+Version: 1.0-r1.2
+Status: install ok installed
+Architecture: beaglebone
+Conffiles:
+ /etc/opkg/arch.conf 7020ae437367de7005684824cfe2a820
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: busybox-udhcpc
+Version: 1.20.2-r8.4
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: libgcrypt11
+Version: 1.5.0-r2.2
+Depends: libcap2 (>= 2.22), libgpg-error0 (>= 1.11), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: pam-plugin-group
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: openssl
+Version: 1.0.1e-r15.1.2
+Depends: libssl1.0.0 (>= 1.0.1e), libc6 (>= 2.17), libcrypto1.0.0 (>= 1.0.1e)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: pam-plugin-securetty
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libopkg1
+Version: 1:0.1.8+svnr649-r13.0.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: lighttpd-module-dirlisting
+Version: 1.4.32-r1.450
+Depends: libpcre1 (>= 8.32), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: libuuid1
+Version: 2.23.2-r0.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: base-files
+Version: 3.0.14-r89.2
+Status: install user installed
+Architecture: beaglebone
+Conffiles:
+ /etc/fstab ba3475d58a07364407eb00744f298162
+ /etc/hostname ad49a24247f8a70e868d108fcf7015a4
+Installed-Time: 1511169269
+
+Package: sysvinit-inittab
+Version: 2.88dsf-r10.14
+Status: install ok installed
+Architecture: beaglebone
+Conffiles:
+ /etc/inittab 54cd0ac437f32ffcba285633dbd916fb
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: pam-plugin-motd
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: pam-plugin-warn
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: pam-plugin-rootok
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: initscripts
+Version: 1.0-r141.558
+Depends: opkg
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: libcrypto1.0.0
+Version: 1.0.1e-r15.1.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: libtinfo5
+Version: 5.9-r15.1.2
+Depends: libc6 (>= 2.17)
+Recommends: ncurses-terminfo-base
+Suggests: ncurses-terminfo
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: lighttpd-module-accesslog
+Version: 1.4.32-r1.450
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: screen
+Version: 4.0.3-r3.2
+Depends: libc6 (>= 2.17), libtinfo5 (>= 5.9), libpam (>= 1.1.6)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: lighttpd-module-expire
+Version: 1.4.32-r1.450
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: monitor-ipsig
+Version: 1.0-r0.3
+Depends: libc6 (>= 2.17)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: pam-plugin-permit
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: lighttpd
+Version: 1.4.32-r1.450
+Depends: libgcc1 (>= linaro-4.7), lighttpd-module-dirlisting, libpcre1 (>= 8.32), lighttpd-module-auth, lighttpd-module-cgi, lighttpd-module-expire, lighttpd-module-access, libc6 (>= 2.17), lighttpd-module-staticfile, lighttpd-module-indexfile, lighttpd-module-accesslog
+Recommends: update-rc.d
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Conffiles:
+ /etc/lighttpd.conf a7a5b79321fbb063fe2aad1fa350ffe1
+Installed-Time: 1511169270
+
+Package: libavahi-common3
+Version: 0.6.31-r7.1.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libblkid1
+Version: 2.23.2-r0.2
+Depends: libgcc1 (>= linaro-4.7), libuuid1 (>= 2.23.2), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libthread-db1
+Version: 2.17-r3.2
+Depends: libc6 (>= 2.17)
+Provides: glibc-thread-db
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: mtd-utils
+Version: 1.5.0-r3.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: eglibc-binary-localedata-en-us
+Version: 2.17-r0.2
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: libpam-runtime
+Version: 1.1.6-r2.2
+Depends: pam-plugin-deny, pam-plugin-permit, pam-plugin-warn, pam-plugin-unix, libpam
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: lighttpd-module-auth
+Version: 1.4.32-r1.450
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: udev-utils
+Version: 1:208-r0.2
+Depends: libgcc1 (>= linaro-4.7), libkmod2 (>= 14+git0+3b38c7fcb58be4ddc34f90454c5f5dc3693d2d85), libacl1 (>= 2.2.51), libc6 (>= 2.17), libblkid1 (>= 2.23.2)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: dropbear
+Version: 2012.55-r2.1.2
+Depends: libgcc1 (>= linaro-4.7), libz1 (>= 1.2.7), opkg, libc6 (>= 2.17), libpam (>= 1.1.6)
+Recommends: update-rc.d
+Provides: sshd, ssh
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: libpcre1
+Version: 8.32-r1.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: curl
+Version: 7.29.0-r1.2
+Depends: libcurl5 (>= 7.29.0), libz1 (>= 1.2.7), libc6 (>= 2.17)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: i2c-tools
+Version: 3.1.0-r0.2
+Depends: libc6 (>= 2.17), perl
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: pam-plugin-nologin
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: lighttpd-module-cgi
+Version: 1.4.32-r1.450
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: lighttpd-module-staticfile
+Version: 1.4.32-r1.450
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: ntp
+Version: 4.2.6p5-r7.0.2
+Depends: libcap2 (>= 2.22), libgcc1 (>= linaro-4.7), ntp-tickadj, libc6 (>= 2.17)
+Recommends: update-rc.d
+Suggests: iana-etc
+Provides: ntp-systemd
+Replaces: ntp-systemd
+Conflicts: ntp-systemd
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Conffiles:
+ /etc/ntp.conf 36dfd3e18dbcda9576f3061761974959
+Installed-Time: 1511169269
+
+Package: libkmod2
+Version: 14+git0+3b38c7fcb58be4ddc34f90454c5f5dc3693d2d85-r0.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libacl1
+Version: 2.2.51-r3.2
+Depends: libattr1 (>= 2.4.46), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: base-passwd
+Version: 3.5.26-r2.2
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: gdb
+Version: 7.5.1-r0.0.1
+Depends: libgcc1 (>= linaro-4.7), libtinfo5 (>= 5.9), libz1 (>= 1.2.7), libreadline6 (>= 6.2), libc6 (>= 2.17), libexpat1 (>= 2.1.0)
+Recommends: glibc-thread-db
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: libreadline6
+Version: 6.2-r4.2
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: pam-plugin-deny
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: shadow
+Version: 4.1.4.3-r13.2
+Depends: libpam-runtime, libgcc1 (>= linaro-4.7), pam-plugin-env, shadow-securetty, pam-plugin-faildelay, pam-plugin-securetty, pam-plugin-limits, pam-plugin-nologin, pam-plugin-motd, libc6 (>= 2.17), pam-plugin-lastlog, pam-plugin-shells, pam-plugin-group, pam-plugin-mail, opkg, pam-plugin-rootok, base-passwd, libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: pam-plugin-unix
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: lighttpd-module-access
+Version: 1.4.32-r1.450
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: libgnutls26
+Version: 2.12.23-r8.4.2
+Depends: libcap2 (>= 2.22), libz1 (>= 1.2.7), libc6 (>= 2.17), libtasn1-3 (>= 2.14), libgpg-error0 (>= 1.11), libgcrypt11 (>= 1.5.0)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: ntp-tickadj
+Version: 4.2.6p5-r7.0.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: perl
+Version: 5.14.3-r1.2
+Depends: libperl5 (>= 5.14.3), libc6 (>= 2.17)
+Provides: perl-module-strict, perl-module-config, perl-module-warnings, perl-module-vars, perl-module-warnings-register
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: udev
+Version: 1:208-r0.2
+Depends: libgcc1 (>= linaro-4.7), libudev1 (>= 208), udev-utils, libacl1 (>= 2.2.51), libc6 (>= 2.17), libkmod2 (>= 14+git0+3b38c7fcb58be4ddc34f90454c5f5dc3693d2d85), libblkid1 (>= 2.23.2)
+Recommends: udev-hwdb
+Provides: hotplug
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: avahi-daemon
+Version: 0.6.31-r7.1.2
+Depends: libavahi-common3 (>= 0.6.31), libdaemon0 (>= 0.14), libcap2 (>= 2.22), libavahi-core7 (>= 0.6.31), sysvinit-pidof, libc6 (>= 2.17), shadow, libexpat1 (>= 2.1.0), base-passwd
+Recommends: libnss-mdns
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Conffiles:
+ /etc/avahi/avahi-daemon.conf aef4943065ce0314732e1e5322bbdbe3
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libncurses5
+Version: 5.9-r15.1.2
+Depends: libtinfo5 (>= 5.9), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: ncurses-terminfo-base
+Version: 5.9-r15.1.2
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: libattr1
+Version: 2.4.46-r4.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: sysvinit-pidof
+Version: 2.88dsf-r11.2
+Depends: libc6 (>= 2.17), opkg
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: pam-plugin-env
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: update-rc.d
+Version: 0.7-r6.2
+Status: install ok installed
+Architecture: all
+Installed-Time: 1511169268
+Auto-Installed: yes
+
+Package: libcap2
+Version: 2.22-r5.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: tinylogin
+Version: 1.4-r9.2
+Depends: libc6 (>= 2.17), opkg
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: angstrom-version
+Version: 2:v2013.06-r12.2
+Status: install user installed
+Architecture: beaglebone
+Installed-Time: 1511169269
+
+Package: libcurl5
+Version: 7.29.0-r1.2
+Depends: libgcc1 (>= linaro-4.7), libcap2 (>= 2.22), libz1 (>= 1.2.7), libgnutls26 (>= 2.12.23), libc6 (>= 2.17), libtasn1-3 (>= 2.14), libgpg-error0 (>= 1.11), libgcrypt11 (>= 1.5.0)
+Recommends: curl-certs
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: monitor-recobtn
+Version: 1.0-r0.415
+Depends: libc6 (>= 2.17)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: stunnel
+Version: 4.56-r0.2
+Depends: libssl1.0.0 (>= 1.0.1e), libz1 (>= 1.2.7), libwrap0 (>= 7.6), libc6 (>= 2.17), libcrypto1.0.0 (>= 1.0.1e)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: led-blink
+Version: 1.0-r0.2
+Depends: libc6 (>= 2.17)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: pam-plugin-lastlog
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libz1
+Version: 1.2.7-r0.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: libtasn1-3
+Version: 2.14-r1.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: netbase
+Version: 1:5.0-r0.2
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Conffiles:
+ /etc/hosts 27acad957c7cded40cd6ac50d23ddc66
+Installed-Time: 1511169269
+
+Package: libgcc1
+Version: linaro-4.7-r2013.07.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: pam-plugin-limits
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libexpat1
+Version: 2.1.0-r0.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: locale-base-en-us
+Version: 2.17-r0.2
+Depends: eglibc-binary-localedata-en-us
+Provides: virtual-locale-en-us, virtual-locale-en
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169268
+
+Package: pam-plugin-faildelay
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libperl5
+Version: 5.14.3-r1.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Provides: perl-module-config-heavy, perl-module-arm-angstrom-linux-gnueabi-config, libperl5, perl-module-arm-angstrom-linux-gnueabi-config-heavy, perl-module-config
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: ntpdate
+Version: 4.2.6p5-r7.0.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Provides: ntpdate-systemd
+Replaces: ntpdate-systemd
+Conflicts: ntpdate-systemd
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Conffiles:
+ /etc/default/ntpdate cd14e09db7250943bcc3faa96455b963
+Installed-Time: 1511169269
+
+Package: cgminer-dash
+Version: 1.0-r1.22
+Depends: libgcc1 (>= linaro-4.7), libtinfo5 (>= 5.9), libncurses5 (>= 5.9), libc6 (>= 2.17)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: dtc
+Version: 1.3.0+git0+27cdc1b16f86f970c3c049795d4e71ad531cca3d-r3.1.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+
+Package: libgpg-error0
+Version: 1.11-r0.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+Auto-Installed: yes
+
+Package: libudev1
+Version: 1:208-r0.2
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: minermonitor
+Version: 1.0-r0.9
+Depends: libcurl5 (>= 7.29.0), libcrypto1.0.0 (>= 1.0.1e), libc6 (>= 2.17), libssl1.0.0 (>= 1.0.1e)
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: sysvinit
+Version: 2.88dsf-r11.2
+Depends: libc6 (>= 2.17), sysvinit-pidof, sysvinit-inittab, opkg
+Status: install user installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169269
+
+Package: libdaemon0
+Version: 0.14-r0.2
+Depends: libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: udev-hwdb
+Version: 1:208-r0.2
+Depends: udev-utils
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libnss-mdns
+Version: 0.10-r7.2
+Depends: avahi-daemon, libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: libavahi-core7
+Version: 0.6.31-r7.1.2
+Depends: libgcc1 (>= linaro-4.7), libavahi-common3 (>= 0.6.31), libc6 (>= 2.17)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+
+Package: pam-plugin-shells
+Version: 1.1.6-r2.2
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Status: install ok installed
+Architecture: armv7ahf-vfp-neon
+Installed-Time: 1511169270
+Auto-Installed: yes
+

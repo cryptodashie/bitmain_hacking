@@ -1,0 +1,8 @@
+/etc/stunnel/stunnel.conf-sample
+/usr/bin/stunnel3
+/usr/lib/stunnel/
+/etc/stunnel/
+/usr/bin/stunnel
+/usr/lib/stunnel/libstunnel.so
+/var/lib/stunnel/
+/etc/stunnel/stunnel.pem

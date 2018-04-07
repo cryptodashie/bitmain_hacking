@@ -1,0 +1,12 @@
+Package: angstrom-version
+Version: 2:v2013.06-r12.2
+Description: angstrom-version version v2013.06-r12
+ angstrom-version version v2013.06-r12
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: MIT
+Architecture: beaglebone
+OE: angstrom-version
+Homepage: unknown
+Source: file://lsb_release

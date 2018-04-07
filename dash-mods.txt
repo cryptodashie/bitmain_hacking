@@ -1,0 +1,18 @@
+
+
+
+< .//usr/lib/libcurl.so.5
+263a263
+> .//usr/lib/libcurl-gnutls.so.4
+272d271
+< .//usr/lib/libcurl.so.5.3.0
+1245d1243
+< .//www/pages/css/cascade.css
+1246a1245
+> .//www/pages/css/cascade2.css
+1252c1251
+< .//www/pages/images/antminer_logo.png
+---
+> .//www/pages/images/antminer_logo2.png
+1372a1372
+> .//www/pages/cgi-bin/kill_bmminer2.cgi

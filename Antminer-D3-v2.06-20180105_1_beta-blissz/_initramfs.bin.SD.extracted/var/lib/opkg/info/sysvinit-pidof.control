@@ -1,0 +1,15 @@
+Package: sysvinit-pidof
+Version: 2.88dsf-r11.2
+Description: sysvinit version 2.88dsf-r11
+ This package is required to boot in most configurations.  It provides the
+ /sbin/init program.  This is the first process started on boot, and the
+ last process terminated before the system halts.
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2+
+Architecture: armv7ahf-vfp-neon
+OE: sysvinit
+Homepage: http://savannah.nongnu.org/projects/sysvinit/
+Depends: libc6 (>= 2.17), opkg
+Source: http://download.savannah.gnu.org/releases-noredirect/sysvinit/sysvinit-2.88dsf.tar.bz2 file://install.patch file://crypt-lib.patch file://need file://provide file://rcS-default file://rc file://rcS file://bootlogd.init

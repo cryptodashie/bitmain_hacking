@@ -1,0 +1,9 @@
+#!/bin/sh
+if test "x$D" != "x"; then
+	OPT="-r $D"
+else
+	OPT="-s"
+fi
+if type update-rc.d >/dev/null 2>/dev/null; then
+	update-rc.d $OPT lighttpd defaults 70
+fi

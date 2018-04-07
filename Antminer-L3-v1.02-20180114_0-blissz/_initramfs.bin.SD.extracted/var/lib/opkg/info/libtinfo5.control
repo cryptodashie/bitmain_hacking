@@ -1,0 +1,15 @@
+Package: libtinfo5
+Version: 5.9-r15.1.2
+Description: The New Curses library
+ ncurses tinfo library
+Section: libs
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: MIT
+Architecture: armv7ahf-vfp-neon
+OE: ncurses
+Homepage: http://www.gnu.org/software/ncurses/ncurses.html
+Depends: libc6 (>= 2.17)
+Suggests: ncurses-terminfo
+Recommends: ncurses-terminfo-base
+Source: ftp://ftp.gnu.org/gnu/ncurses/ncurses-5.9.tar.gz file://tic-hang.patch file://config.cache

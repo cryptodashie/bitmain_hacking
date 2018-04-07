@@ -1,0 +1,4 @@
+/etc/angstrom-build-info
+/usr/bin/lsb_release
+/etc/os-release
+/etc/angstrom-version

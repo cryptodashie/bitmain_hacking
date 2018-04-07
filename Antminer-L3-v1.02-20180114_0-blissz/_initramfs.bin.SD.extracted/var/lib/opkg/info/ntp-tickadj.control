@@ -1,0 +1,15 @@
+Package: ntp-tickadj
+Version: 4.2.6p5-r7.0.2
+Description: Network Time Protocol daemon and utilities
+ The Network Time Protocol (NTP) is used to synchronize the time of a
+ computer client or server to another server or reference time source,
+ such as a radio or satellite receiver or modem.
+Section: console/network
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: NTP
+Architecture: armv7ahf-vfp-neon
+OE: ntp
+Homepage: http://support.ntp.org
+Depends: libc6 (>= 2.17)
+Source: http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.6p5.tar.gz file://tickadj.c.patch file://ntp-4.2.4_p6-nano.patch file://openssl-check.patch file://ntpd file://ntp.conf file://ntpdate file://ntpdate.default file://ntpdate.service file://ntpd.service file://sntp.service file://sntp

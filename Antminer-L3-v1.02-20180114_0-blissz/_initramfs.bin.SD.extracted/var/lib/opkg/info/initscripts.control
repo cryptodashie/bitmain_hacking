@@ -1,0 +1,17 @@
+Package: initscripts
+Version: 1.0-r141.513
+Description: SysV init scripts
+ Initscripts provide the basic system startup initialization scripts for
+ the system.  These scripts include actions such as filesystem mounting,
+ fsck, RTC manipulation and other actions routinely performed at system
+ startup.  In addition, the scripts are also used during system shutdown
+ to reverse the actions performed at startup.
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2
+Architecture: armv7ahf-vfp-neon
+OE: initscripts
+Homepage: unknown
+Depends: opkg
+Source: file://functions file://halt file://umountfs file://devpts.sh file://devpts file://hostname.sh file://mountall.sh file://banner.sh file://bootmisc.sh file://mountnfs.sh file://reboot file://checkfs.sh file://single file://sendsigs file://urandom file://rmnologin.sh file://checkroot.sh file://umountnfs.sh file://sysfs.sh file://device_table.txt file://populate-volatile.sh file://read-only-rootfs-hook.sh file://volatiles file://save-rtc.sh file://GPLv2.patch file://alignment.sh file://mountdevtmpfs.sh file://network.sh file://network.conf.factory file://network_c1.conf.factory file://cgminer.sh.ltc file://cgminer.sh.dash file://cgminer.conf.factory file://cgminer_c1.conf.factory file://cgminer_c2.conf.factory file://cgminer_s4p.conf.factory file://cgminer_s5.conf.factory file://cgminer_s5p.conf.factory file://cgminer_l3.conf.factory file://cgminer_d1.conf.factory file://cgminer_s2.conf.factory file://user_setting.factory file://user_defined_lcd.factory file://ntpdate.sh file://shadow.factory file://bitmainer_setup.sh file://monitorcg file://miner_lcd.sh file://pgnand.sh file://pic.txt file://auto_freq.sh file://auto_freq.conf file://reset.sh file://miner-m.sh file://dataformatconfig file://minermonitor.conf file://minermonitor

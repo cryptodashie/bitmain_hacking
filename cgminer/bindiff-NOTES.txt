@@ -1,0 +1,40 @@
+get a list of all matching / new function blocks from comparison 
+radiff2 -a arm -AC 287ed051cf824b71532f4828689f2f57 29a782020faa453832d3e5ed26796e02 >> bindiff-analysis.txt
+
+graph every function of an arm binary, in functions that exist but do not match, ignore new functions.
+
+for func in `cat bindiff-analysis.txt | grep UNMATCH | awk '{print $1}'`;do radiff2 -a arm -A -g $func 287ed051cf824b71532f4828689f2f57 29a782020faa453832d3e5ed26796e02 >> $func.dot;dot -T pdf -o $func.pdf $func.dot;done
+
+++
+made on device, test outputs to compiled firmware latest. 
+compile options more or less match the 4.10 blissz mod, but he has ported bitmain 4.9 to 4.10 for support.
+-- 
+./configure --disable-udev --disable-libcurl --enable-static --enable-bitmain --prefix /usr --without-curses
+
+
+# enable bitmain-D1 on bitmain cgminer 4.9
+./configure --disable-udev --disable-libcurl --enable-static --enable-bitmain-D1 --disable-adl --disable-opencl --prefix /usr --without-curses
+
+# These come from D1
+--bitmain-fan-ctrl  Enable bitmain miner fan controlling
+--bitmain-fan-pwm <arg> Set bitmain fan pwm percentage 0~100 (default: 30)
+--bitmain-freq <arg> Set frequency (default: 100)
+--bitmain-core-temp <arg> Select core temp (default: 2)
+--bitmain-voltage <arg> Set voltage (default: 176)
+
+# blissz modified options, added support for multi-chain selection of ASIC settings. extend D1 to take argv options for all chains.
+# updated to cgminer 4.10.0
+--bitmain-reboot    Enable bitmain miner to reboot on low hashrate
+--bitmain-reboot-asic Enable bitmain miner to reboot on high amount of ASIC fails
+--bitmain-fan-mode <arg> Choose bitmain miner fan control mode 0 = auto, 1 = auto silent, 2 = auto perf, 3 = manual mode (default: 0)
+--bitmain-fan-pwm <arg> Set bitmain fan pwm percentage 0~100 (default: 10)
+--bitmain-freq <arg> Set frequency (default: 100)
+--bitmain-freq1 <arg> Set frequency chain 1 (default: 0)
+--bitmain-freq2 <arg> Set frequency chain 2 (default: 0)
+--bitmain-freq3 <arg> Set frequency chain 3 (default: 0)
+--bitmain-core-temp <arg> Select core temp (default: 2)
+--bitmain-voltage <arg> Set voltage (default: 600)
+--bitmain-voltage1 <arg> Set voltage chain 1 (default: 0)
+--bitmain-voltage2 <arg> Set voltage chain 2 (default: 0)
+--bitmain-voltage3 <arg> Set voltage chain 3 (default: 0)
+

@@ -1,0 +1,16 @@
+#!/bin/sh
+	update-alternatives --install /etc/init.d/syslog syslog-init /etc/init.d/syslog.busybox 50
+	update-alternatives --install /etc/syslog-startup.conf syslog-startup-conf /etc/syslog-startup.conf.busybox 50
+OPTS=""
+
+if [ -n "$D" ]; then
+    OPTS="--root=$D"
+fi
+
+if type systemctl >/dev/null 2>/dev/null; then
+	systemctl $OPTS enable busybox-syslog.service
+
+	if [ -z "$D" -a "enable" = "enable" ]; then
+		systemctl restart busybox-syslog.service
+	fi
+fi

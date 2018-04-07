@@ -1,0 +1,4 @@
+/usr/bin/openssl
+/usr/lib/ssl/private/
+/usr/lib/ssl/certs/
+/usr/lib/ssl/

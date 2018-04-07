@@ -1,0 +1,4 @@
+#!/bin/sh
+opkg-cl configure 
+rm -f //etc/rcS.d/S98run-postinsts
+

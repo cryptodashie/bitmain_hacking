@@ -1,0 +1,13 @@
+Package: mtd-utils
+Version: 1.5.0-r3.2
+Description: mtd-utils version 1.5.0-r3
+ Tools for managing memory technology devices.
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2+
+Architecture: armv7ahf-vfp-neon
+OE: mtd-utils
+Homepage: http://www.linux-mtd.infradead.org/
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Source: git://git.infradead.org/mtd-utils.git;protocol=git file://add-exclusion-to-mkfs-jffs2-git-2.patch file://mtd-utils-fix-corrupt-cleanmarker-with-flash_erase--j-command.patch

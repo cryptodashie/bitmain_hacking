@@ -1,0 +1,10 @@
+/usr/bin/dbclient
+/usr/sbin/dropbearmulti
+/etc/pam.d/
+/etc/dropbear/
+/etc/init.d/dropbear
+/usr/sbin/dropbearkey
+/usr/sbin/dropbearconvert
+/usr/sbin/dropbear
+/etc/pam.d/dropbear
+/etc/rcS.d/S40dropbear

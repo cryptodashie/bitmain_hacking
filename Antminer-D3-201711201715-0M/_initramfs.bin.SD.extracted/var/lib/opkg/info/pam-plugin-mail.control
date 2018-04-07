@@ -1,0 +1,13 @@
+Package: pam-plugin-mail
+Version: 1.1.6-r2.2
+Description: Linux-PAM (Pluggable Authentication Modules)
+ PAM plugin for -mail
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2+ | BSD
+Architecture: armv7ahf-vfp-neon
+OE: libpam
+Homepage: https://fedorahosted.org/linux-pam/
+Depends: libc6 (>= 2.17), libpam (>= 1.1.6)
+Source: http://linux-pam.org/library/Linux-PAM-1.1.6.tar.bz2 file://99_pam file://pam.d/* file://libpam-xtests.patch file://destdirfix.patch file://fixsepbuild.patch file://reflect-the-enforce_for_root-semantics-change-in-pam.patch file://add-checks-for-crypt-returning-NULL.patch file://libpam-fix-for-CVE-2010-4708.patch

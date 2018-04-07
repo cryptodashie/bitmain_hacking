@@ -1,0 +1,13 @@
+Package: libopkg1
+Version: 1:0.1.8+svnr649-r13.0.2
+Description: opkg version 0.1.8+svnr649-r13.0
+ Open Package Manager Library
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2+
+Architecture: armv7ahf-vfp-neon
+OE: opkg
+Homepage: http://code.google.com/p/opkg/
+Depends: libc6 (>= 2.17)
+Source: svn://opkg.googlecode.com/svn;module=trunk;protocol=http file://obsolete_automake_macros.patch

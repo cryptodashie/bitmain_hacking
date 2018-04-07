@@ -1,0 +1,851 @@
+<script>
+
+
+var str_status 
+var str_pools
+var str_summary
+
+var xhr1 = new XMLHttpRequest();
+xhr1.open('GET', '/cgi-bin/get_status_api.cgi');
+xhr1.send(null);
+onload = function()
+{
+
+ 
+
+	
+}
+
+function FormatNumber(dd) {
+	var tst = dd.toString();
+
+	
+	var ss = tst.split("").reverse().join("").replace(/(\d{3})+?/g,function(s){
+    return s+",";
+}).replace(/,$/,"").split("").reverse().join("") 
+	return ss;
+	
+}
+
+xhr1.onreadystatechange = function(){
+    var DONE = 4;
+    var OK = 200; 
+    if(xhr1.readyState === DONE){
+        if(xhr1.status === OK){
+            console.log(xhr1.responseText);          
+            ttest(xhr1.responseText)
+        } else{
+            console.log("Error: "+ xhr1.status); 
+        }
+    }
+}
+
+function FormatSecond(dd) {
+	var t_dd = parseInt(dd)
+	var str_t;
+	var day=0
+	var hour=0
+	var minu=0
+	var sec=0
+	sec = parseInt(t_dd % 60)
+	if (dd >= 60) {
+		minu = parseInt(t_dd / 60)
+		str_t = sec.toString() + "s"
+		if (minu >= 60) {
+			hour = parseInt(minu / 60)
+			minu = parseInt(minu % 60)
+			str_t = minu.toString() + "m" + str_t
+		}
+		if (hour >= 24 ) {
+			day = parseInt(hour/24)
+			hour = parseInt(hour%24)
+		}
+	}
+	if (day !=0 )
+	{
+		str_t = day + "d" + hour + "h" + minu + "m" + sec + "s"
+	}
+	else if(hour != 0)
+	{
+		str_t = hour + "h" + minu + "m" + sec + "s"
+	}
+	else if(minu != 0)
+	{
+		str_t = minu + "m" + sec + "s"
+	}
+	else
+	{
+		str_t = sec + "s"
+	}
+	return str_t
+}
+
+function FillData( d) {
+	
+				/////////Fill Summary
+	     var tableObj = document.getElementById('summary_list');  
+       var rowNums = tableObj.rows.length;  
+       var newRow = tableObj.insertRow(rowNums);  
+       newRow.className="cbi-rowstyle-1 cbi-value-field"
+       var col1 = newRow.insertCell(0);  
+       col1.innerHTML = FormatSecond(d.Summury.Elapsed);  
+       var col2 = newRow.insertCell(1);  
+       col2.innerHTML = FormatNumber(d.Summury.RT);  
+       var col3 = newRow.insertCell(2);  
+       col3.innerHTML = FormatNumber(d.Summury.AVG);  
+       var col4 = newRow.insertCell(3);  
+       col4.innerHTML = FormatNumber(d.Summury.FoundBlocks);  
+       var col5 = newRow.insertCell(4);  
+       col5.innerHTML = FormatNumber(d.Summury.LocalWork);  
+       var col6 = newRow.insertCell(5);  
+       col6.innerHTML = FormatNumber(d.Summury.Utility);  
+       var col7 = newRow.insertCell(6);  
+       col7.innerHTML = FormatNumber(d.Summury.WU);  
+       var col8 = newRow.insertCell(7);  
+       col8.innerHTML = FormatNumber(d.Summury.BestShare);  
+       //col2.align = "center";  
+	
+	
+	///////Fill Pool
+	
+		   var tableObj1 = document.getElementById('ant_pools');  
+       
+	
+			var pool = d.Pools.Data.length
+			
+			for ( i = 0; i < pool; ++i ) {
+				
+				var rowNums = tableObj1.rows.length;  
+				var newRow = tableObj1.insertRow(rowNums); 
+				newRow.className="cbi-rowstyle-1 cbi-value-field" 
+				var col1 = newRow.insertCell(0);  
+	      col1.innerHTML = d.Pools.Data[i].Index;  
+	      var col2 = newRow.insertCell(1);  
+	      col2.innerHTML = d.Pools.Data[i].URL;  
+	      var col3 = newRow.insertCell(2);  
+	      col3.innerHTML = d.Pools.Data[i].User;  
+	      var col4 = newRow.insertCell(3);  
+	      col4.innerHTML = d.Pools.Data[i].Status;  
+	      var col5 = newRow.insertCell(4);  
+	      col5.innerHTML = d.Pools.Data[i].Diff;  
+	      var col6 = newRow.insertCell(5);  
+	      col6.innerHTML = FormatNumber(d.Pools.Data[i].GetWorks );
+	      var col7 = newRow.insertCell(6);  
+	      col7.innerHTML = d.Pools.Data[i].Priority;  
+	      var col8 = newRow.insertCell(7);  
+	      col8.innerHTML = FormatNumber(d.Pools.Data[i].Accepted);			
+	      var col9 = newRow.insertCell(8);  
+	      col9.innerHTML = FormatNumber(d.Pools.Data[i].Nonce);  
+	      var col10 = newRow.insertCell(9);  
+	      col10.innerHTML = FormatNumber(d.Pools.Data[i].DiffA);  
+	      var col11 = newRow.insertCell(10);  
+	      col11.innerHTML = FormatNumber(d.Pools.Data[i].DiffR);  
+	      var col12 = newRow.insertCell(11);  
+	      col12.innerHTML = FormatNumber(d.Pools.Data[i].DiffS);  
+	      var col13 = newRow.insertCell(12);  
+	      col13.innerHTML = FormatNumber(d.Pools.Data[i].Rejected);  
+	      var col14 = newRow.insertCell(13);  
+	      col14.innerHTML = FormatNumber(d.Pools.Data[i].Discarded);  
+	      var col15 = newRow.insertCell(14);  
+	      col15.innerHTML = FormatNumber(d.Pools.Data[i].Stale);  
+	      var col16 = newRow.insertCell(15);  
+	      col16.innerHTML = d.Pools.Data[i].LSTime;
+	      var col17 = newRow.insertCell(15);  
+	      col17.innerHTML = FormatNumber(d.Pools.Data[i].LSDiff);				
+			}
+			
+			//////////---Fill----Total
+	
+	
+				var rowNums = tableObj1.rows.length;  
+	      var newRow = tableObj1.insertRow(rowNums); 
+	      newRow.className="cbi-rowstyle-1 cbi-value-field" 
+				var col1 = newRow.insertCell(0);  
+	      col1.innerHTML = "Total";  
+	      var col2 = newRow.insertCell(1);  
+	   
+	      var col3 = newRow.insertCell(2);  
+	 
+	      var col4 = newRow.insertCell(3);  
+	  
+	      var col5 = newRow.insertCell(4);  
+	    
+	      var col6 = newRow.insertCell(5);  
+	      col6.innerHTML = FormatNumber(d.Pools.Total.GetWork);  
+	      var col7 = newRow.insertCell(6);  
+	       
+	      var col8 = newRow.insertCell(7);  
+	      col8.innerHTML = FormatNumber(d.Pools.Total.Accept);  
+	      var col9 = newRow.insertCell(8);  
+	      col9.innerHTML = FormatNumber(d.Pools.Total.Nonce);  
+	      var col10 = newRow.insertCell(9);  
+	      col10.innerHTML = FormatNumber(d.Pools.Total.DiffA);  
+	      var col11 = newRow.insertCell(10);  
+	      col11.innerHTML = FormatNumber(d.Pools.Total.DiffR);  
+	      var col12 = newRow.insertCell(11);  
+	      col12.innerHTML = FormatNumber(d.Pools.Total.DiffS);  
+	      var col13 = newRow.insertCell(12);  
+	      col13.innerHTML = FormatNumber(d.Pools.Total.Rejected);  
+	      var col14 = newRow.insertCell(13);  
+	      col14.innerHTML = FormatNumber(d.Pools.Total.Discarded);  
+	      var col15 = newRow.insertCell(14);  
+	      col15.innerHTML = FormatNumber(d.Pools.Total.Stale);  
+	      var col16 = newRow.insertCell(15);  
+	     
+	      var col17 = newRow.insertCell(15);  
+	      
+	      
+	      
+	      /////////////Fill HW
+	      
+	      var rowNums = tableObj1.rows.length;  
+	      var newRow = tableObj1.insertRow(rowNums); 
+	      newRow.className="cbi-rowstyle-1 cbi-value-field" 
+				var col1 = newRow.insertCell(0);  
+	      col1.innerHTML = "HW";  
+	      var col2 = newRow.insertCell(1);  
+	   		col2.innerHTML = FormatNumber(d.AntMiner.TotalHW);
+	      var col3 = newRow.insertCell(2);  
+	 
+	      var col4 = newRow.insertCell(3);  
+	  
+	      var col5 = newRow.insertCell(4);  
+	    
+	      var col6 = newRow.insertCell(5);  
+
+	      var col7 = newRow.insertCell(6);  
+	       
+	      var col8 = newRow.insertCell(7);  
+
+	      var col9 = newRow.insertCell(8);  
+	      col9.innerHTML = ((d.AntMiner.TotalHW/d.Pools.Total.Nonce)*100).toFixed(4) + "%" ;  
+	      var col10 = newRow.insertCell(9);  
+	      col10.innerHTML = ((d.AntMiner.TotalHW/d.Pools.Total.DiffA)*100).toFixed(4) + "%" ;  ;  
+	      var col11 = newRow.insertCell(10);  
+
+	      var col12 = newRow.insertCell(11);  
+	      //col12.innerHTML = d.Pools.Total.DiffS;  
+	      var col13 = newRow.insertCell(12);  
+ 
+	      var col14 = newRow.insertCell(13);  
+
+	      var col15 = newRow.insertCell(14);  
+
+	      var col16 = newRow.insertCell(15);  
+	     
+	      var col17 = newRow.insertCell(15);  
+	      
+	      
+	      /////////////////Fill Antminers
+	     var tableObj3 = document.getElementById('ant_devs');  
+       var rowNums = tableObj3.rows.length;  
+
+	      
+	
+				var chains = d.AntMiner.ChainStatus.length;
+			
+				
+				for ( i = (chains-1); i >=0; --i ) {
+						
+						if (d.AntMiner.ChainStatus[i].AsicStatus == "None") {
+							continue;
+						}
+						 var newRow = tableObj3.insertRow(rowNums);  
+			       newRow.className="cbi-section-table-row cbi-rowstyle-1"
+			       var col1 = newRow.insertCell(0);  
+			       col1.innerHTML = d.AntMiner.ChainStatus[i].ChainNo;
+			      
+			       var col2 = newRow.insertCell(1);  
+			       col2.innerHTML = d.AntMiner.ChainStatus[i].ASIC;  
+			       var col3 = newRow.insertCell(2);  
+			       col3.innerHTML = d.AntMiner.ChainStatus[i].Frequency;  
+			       var col4 = newRow.insertCell(3);  
+			       col4.innerHTML = d.AntMiner.ChainStatus[i].RealTime;  
+			       var col5 = newRow.insertCell(4);   
+			       col5.innerHTML = FormatNumber(d.AntMiner.ChainStatus[i].HW);  
+			       var col6 = newRow.insertCell(5);  
+			       col6.innerHTML = d.AntMiner.Temp[i].PCB;  
+			       var col7 = newRow.insertCell(6);  
+			       col7.innerHTML = d.AntMiner.Temp[i].CHIP;  
+			       var col8 = newRow.insertCell(7);  
+			       col8.innerHTML = d.AntMiner.ChainStatus[i].AsicStatus;  
+					
+				}
+	
+			document.getElementById('ant_fan1').innerHTML = FormatNumber(d.AntMiner.FanStatus.Fan1Speed)
+			document.getElementById('ant_fan2').innerHTML = FormatNumber(d.AntMiner.FanStatus.Fan2Speed)
+	
+	
+}
+
+function ttest(str1) {
+	
+	var reg_test_connect = /Connection refused/
+	var tst_res = reg_test_connect.exec(str1)
+	if (tst_res!=null) {
+		return;
+	}
+	
+	var str_status = str1 
+	var str_pools = str1
+	var str_summary = str1
+			var str_total = "{"
+
+			var pools_count = 3
+
+			////////////////////////////Summary////////////////////////
+			str_total += "\"Summury\":{"
+			var reg_summary_elasped=/Elapsed=([^,]+)/
+			var reg_summary_realtime=/GHS 5s=([^,]+)/
+			var reg_summary_avg=/GHS av=([^,]+)/
+			var reg_summary_foundblocks=/Found Blocks=([^,]+)/
+			var reg_summary_localwork=/Local Work=([^,]+)/
+			var reg_summary_utility=/Utility=([^,]+)/
+			var reg_summary_wu=/Work Utility=([^,]+)/
+			var reg_summary_bs=/Best Share=([^,]+)/
+
+
+			var t = reg_summary_elasped.exec(str_summary)
+			
+			str_total+="\"Elapsed\":"+t[1]+","
+
+			var t = reg_summary_realtime.exec(str_summary)
+			
+			str_total+="\"RT\":"+t[1]+","
+
+			var t = reg_summary_avg.exec(str_summary)
+		
+			str_total+="\"AVG\":"+t[1]+","
+
+			var t = reg_summary_foundblocks.exec(str_summary)
+		
+			str_total+="\"FoundBlocks\":"+t[1]+","
+
+			var t = reg_summary_localwork.exec(str_summary)
+			
+			str_total+="\"LocalWork\":"+t[1]+","
+
+			var t = reg_summary_utility.exec(str_summary)
+		
+			str_total+="\"Utility\":"+t[1]+","
+
+			var t = reg_summary_wu.exec(str_summary)
+			
+			str_total+="\"WU\":"+t[1]+","
+
+			var t = reg_summary_bs.exec(str_summary)
+		
+			str_total+="\"BestShare\":"+t[1]+"},"
+
+			///////////////////////Pool///////////////////////////////////
+
+
+			str_total+="\"Pools\":\{\"Data\":["
+
+			var str_pool_num = "POOL="
+
+			var reg_pool_url = /URL=([^,]+)/
+			var reg_pool_user = /User=([^,]+)/
+			var reg_pool_status = /Status=([^,]+)/
+			var reg_pool_diff = /Diff=([^,]+)/
+			var reg_pool_getwork = /Getworks=([^,]+)/
+			var reg_pool_priority = /Priority=([^,]+)/
+			var reg_pool_accepted = /Accepted=([^,]+)/
+			var reg_pool_diff1 = /Diff1 Shares=([^,|^\.]+)/
+			var reg_pool_diffa = /Difficulty Accepted=([^,|^\.]+)/
+			var reg_pool_diffr = /Difficulty Rejected=([^,|^\.]+)/
+			var reg_pool_diffs = /Difficulty Stale=([^,|^\.]+)/
+			var reg_pool_rejected = /Rejected=([^,|^\.]+)/ 
+			var reg_pool_discarded = /Discarded=([^,|^\.]+)/
+			var reg_pool_stale=/Stale=([^,|^\.]+)/
+			var reg_pool_lsdiff=/Last Share Difficulty=([^,|^\.]+)/
+			var reg_pool_lstime=/Last Share Time=([^,]+)/
+
+			var reg_pool_total_getworks = 0
+			var reg_pool_total_accept = 0
+			var reg_pool_total_diff1 = 0
+			var reg_pool_total_diffa = 0
+			var reg_pool_total_diffr = 0
+			var reg_pool_total_diffs = 0
+			var reg_pool_total_reject = 0
+			var reg_pool_total_discarded = 0
+			var reg_pool_total_stale = 0
+
+
+			for (i = 0; i < pools_count; ++i ) {
+				var tmp_rag_str = str_pool_num + i + "[^|]+"// POOL=1[^|]+
+				var rag_tmp = new RegExp(tmp_rag_str)
+				var tmp_str = rag_tmp.exec(str_pools)
+				
+				
+				
+				str_total+="{"
+				
+				var tmp = reg_pool_url.exec(tmp_str)
+				if(tmp)
+					str_total+="\"Index\":" + i + ",\"URL\":\"" + tmp[1] + "\","
+				else
+					str_total+="\"Index\":" + i + ",\"URL\":\" \","
+	
+				tmp = reg_pool_user.exec(tmp_str)
+				if(tmp)
+					str_total+="\"User\":\"" + tmp[1] + "\","
+				else
+					str_total+="\"User\":\" \","
+	
+				tmp = reg_pool_status.exec(tmp_str)
+	
+				str_total+="\"Status\":\"" + tmp[1] + "\","
+				
+				tmp = reg_pool_diff.exec(tmp_str)
+
+				str_total+="\"Diff\":\"" + tmp[1] + "\","
+				
+				tmp = reg_pool_getwork.exec(tmp_str)
+		
+				str_total+="\"GetWorks\":\"" + tmp[1] + "\","		
+				reg_pool_total_getworks = reg_pool_total_getworks*1 + tmp[1] * 1
+
+				tmp = reg_pool_priority.exec(tmp_str)
+		
+				str_total+="\"Priority\":\"" + tmp[1] + "\","
+				
+				tmp = reg_pool_accepted.exec(tmp_str)
+
+				str_total += "\"Accepted\":\"" + tmp[1] + "\","
+				reg_pool_total_accept = reg_pool_total_accept*1 + tmp[1] * 1
+				
+				tmp = reg_pool_diff1.exec(tmp_str)
+		
+				str_total += "\"Nonce\":\"" + tmp[1] + "\","
+				reg_pool_total_diff1 +=  tmp[1] * 1
+				
+				tmp = reg_pool_diffa.exec(tmp_str)
+				
+				str_total += "\"DiffA\":\"" + tmp[1] + "\","
+				reg_pool_total_diffa +=  tmp[1] * 1
+				
+				tmp = reg_pool_diffr.exec(tmp_str)
+				
+				str_total += "\"DiffR\":\"" + tmp[1] + "\","
+				reg_pool_total_diffr +=  tmp[1] * 1
+				
+				tmp = reg_pool_diffs.exec(tmp_str)
+			
+				str_total += "\"DiffS\":\"" + tmp[1] + "\","
+				reg_pool_total_diffs +=  tmp[1] * 1
+				
+				tmp = reg_pool_rejected.exec(tmp_str)
+			
+				str_total += "\"Rejected\":\"" + tmp[1] + "\","
+				reg_pool_total_reject +=  tmp[1] * 1
+				
+				tmp = reg_pool_discarded.exec(tmp_str)
+			
+				str_total += "\"Discarded\":\"" + tmp[1] + "\","
+				reg_pool_total_discarded +=  tmp[1] * 1
+				
+				tmp = reg_pool_stale.exec(tmp_str)
+				
+				str_total += "\"Stale\":\"" + tmp[1] + "\","	
+				reg_pool_total_stale +=  tmp[1] * 1
+				
+			  tmp = reg_pool_lsdiff.exec(tmp_str)
+				
+				str_total += "\"LSDiff\":\"" + tmp[1] + "\","
+				
+				tmp = reg_pool_lstime.exec(tmp_str)
+				
+				if (tmp == 0 ) {
+				str_total += "\"LSTime\":\"" + "Never" + "\""
+				} else {
+					str_total += "\"LSTime\":\"" + tmp[1] + "\""
+				}
+				
+				if ( i != (pools_count-1) ) {
+					str_total+="},"
+				} else {
+					str_total += "}"	
+				}
+			}
+			  str_total += "],"
+			  str_total += "\"Total\":{" 
+			  str_total += "\"GetWork\":" + reg_pool_total_getworks + ","
+			  str_total += "\"Accept\":" + reg_pool_total_accept + ","
+			  str_total += "\"Nonce\":"+ reg_pool_total_diff1 +","
+			  str_total += "\"DiffA\":"+reg_pool_total_diffa+","
+			  str_total += "\"DiffR\":"+ reg_pool_total_diffr +","
+			  str_total += "\"DiffS\":"+reg_pool_total_diffs+","
+			  str_total += "\"Rejected\":"+ reg_pool_total_reject +","
+			  str_total += "\"Discarded\":"+reg_pool_total_discarded+","
+			  str_total += "\"Stale\":"+reg_pool_total_stale+"}"
+			  str_total += "},"
+			  
+		
+
+			/////////////////////Antminer///////////////////////
+
+			  var ant_chain_count = 4
+			  
+				var reg_ant_freq = /frequency=([^,]+)/
+				var reg_ant_fan1 = /fan1=([^,]+)/
+				var reg_ant_fan2 = /fan2=([^,]+)/
+
+				
+
+				var str_ant_acs = "chain_acs"
+				var str_ant_acn = "chain_acn"
+				var str_ant_hw  = "chain_hw"
+				var str_ant_rate = "chain_rate"
+
+				var total_hw = 0
+
+			  str_total += "\"AntMiner\":\{"
+			  
+			  str_total += "\"ChainStatus\":"
+			  str_total += "["
+			  
+				for ( i = 1; i <= ant_chain_count; ++i ) {
+					
+					var reg_ant_acs_str = str_ant_acs + i + "=([^,]+)"
+					var reg_ant_acn_str = str_ant_acn + i + "=([^,]+)"
+					var reg_ant_hw_str = str_ant_hw + i + "=([^,]+)"
+					var reg_ant_rate_str = str_ant_rate + i + "=([^,|^\|]+)"
+					
+					var reg_ant_acs = new RegExp(reg_ant_acs_str)
+					var reg_ant_acn = new RegExp(reg_ant_acn_str)
+					var reg_ant_hw = new RegExp(reg_ant_hw_str)
+					var reg_ant_rate = new RegExp(reg_ant_rate_str)		
+					
+					str_total += "{\"ChainNo\":"+ i +","
+					
+					tmp = reg_ant_acs.exec(str_status)
+					if (tmp != null ) {
+					str_total += "\"AsicStatus\":\""+tmp[1]+"\","
+				}
+				else {
+					str_total += "\"AsicStatus\":\""+"None"+"\","
+				}
+					tmp = reg_ant_acn.exec(str_status)
+					str_total += "\"ASIC\":\""+tmp[1]+"\","		
+					
+					tmp = reg_ant_hw.exec(str_status)
+					str_total += "\"HW\":\""+tmp[1]+"\","
+					total_hw += tmp[1]*1
+					
+					
+					tmp = reg_ant_rate.exec(str_status)
+					if (tmp != null) {
+					str_total += "\"RealTime\":\""+tmp[1]+"\","	
+				}
+				else {
+					str_total += "\"RealTime\":\""+"0"+"\","	
+				}
+					
+					tmp = reg_ant_freq.exec(str_status)
+					str_total += "\"Frequency\":" + tmp[1]
+					
+					if ( i != ant_chain_count ) {
+			      str_total += "},"
+					} else {
+						str_total += "}"
+					}
+				}
+				str_total += "],"
+				
+					 
+					 
+			  ///////////!!!!!!!///////
+			  ///////////Here Need Fix For Each Device
+			  //////////Temp
+			  
+			  var reg_temp3_tst = /temp31=([^,]+)/
+			  var res = reg_temp3_tst.exec(str_status);
+			  if (res) { ////////has In Out
+			  
+			  str_total += "\"Temp\":["
+			  var reg_pcb_1_o = /temp1=([^,]+)/
+			  var reg_pcb_2_o = /temp2=([^,]+)/
+				var reg_pcb_3_o = /temp3=([^,]+)/
+			  var reg_pcb_4_o = /temp4=([^,]+)/
+			  
+			  var reg_chip_1_o = /temp2_1=([^,]+)/
+			  var reg_chip_2_o = /temp2_2=([^,]+)/
+				var reg_chip_3_o = /temp2_3=([^,]+)/
+			  var reg_chip_4_o = /temp2_4=([^,]+)/
+			  
+			  var reg_pcb_1_i = /temp31=([^,]+)/
+			  var reg_pcb_2_i = /temp32=([^,]+)/
+				var reg_pcb_3_i = /temp33=([^,]+)/
+			  var reg_pcb_4_i = /temp34=([^,]+)/
+			  
+			  var reg_chip_1_i = /temp4_1=([^,]+)/
+			  var reg_chip_2_i = /temp4_2=([^,]+)/
+				var reg_chip_3_i = /temp4_3=([^,]+)/
+			  var reg_chip_4_i = /temp4_4=([^,]+)/
+			  
+			  var temp_pcb_1_o = reg_pcb_1_o.exec(str_status)
+			  var temp_pcb_2_o = reg_pcb_2_o.exec(str_status)
+			  var temp_pcb_3_o = reg_pcb_3_o.exec(str_status)
+			  var temp_pcb_4_o = reg_pcb_4_o.exec(str_status)
+			  
+			  var temp_chip_1_o = reg_chip_1_o.exec(str_status)
+			  var temp_chip_2_o = reg_chip_2_o.exec(str_status)
+			  var temp_chip_3_o = reg_chip_3_o.exec(str_status)
+			  var temp_chip_4_o = reg_chip_4_o.exec(str_status)
+			  
+			  var temp_pcb_1_i = reg_pcb_1_i.exec(str_status)
+			  var temp_pcb_2_i = reg_pcb_2_i.exec(str_status)
+			  var temp_pcb_3_i = reg_pcb_3_i.exec(str_status)
+			  var temp_pcb_4_i = reg_pcb_4_i.exec(str_status)
+			  
+			  var temp_chip_1_i = reg_chip_1_i.exec(str_status)
+			  var temp_chip_2_i = reg_chip_2_i.exec(str_status)
+			  var temp_chip_3_i = reg_chip_3_i.exec(str_status)
+			  var temp_chip_4_i = reg_chip_4_i.exec(str_status)
+			  
+			  var str_ttmp = "{\"PCB\":\"I:"+temp_pcb_1_i[1]+" O:"+temp_pcb_1_o[1]+"\",\"CHIP\":\"I:"+temp_chip_1_i[1]+" O:"+temp_chip_1_o[1]+"\"},{\"PCB\":\"I:"+temp_pcb_2_i[1]+" O:"+temp_pcb_2_o[1]+"\",\"CHIP\":\"I:"+temp_chip_2_i[1]+" O:"+temp_chip_2_o[1]+"\"},{\"PCB\":\"I:"+temp_pcb_3_i[1]+" O:"+temp_pcb_3_o[1]+"\",\"CHIP\":\"I:"+temp_chip_3_i[1]+" O:"+temp_chip_3_o[1]+"\"},{\"PCB\":\"I:"+temp_pcb_4_i[1]+" O:"+temp_pcb_4_o[1]+"\",\"CHIP\":\"I:"+temp_chip_4_i[1]+" O:"+temp_chip_4_o[1]+"\"}"			  
+			  
+			  str_total+= str_ttmp
+			}
+			
+			else {
+				str_total += "\"Temp\":["
+			  var reg_pcb_1_o = /temp1=([^,]+)/
+			  var reg_pcb_2_o = /temp2=([^,]+)/
+				var reg_pcb_3_o = /temp3=([^,]+)/
+			  var reg_pcb_4_o = /temp4=([^,]+)/
+			  
+			  var reg_chip_1_o = /temp2_1=([^,]+)/
+			  var reg_chip_2_o = /temp2_2=([^,]+)/
+				var reg_chip_3_o = /temp2_3=([^,]+)/
+			  var reg_chip_4_o = /temp2_4=([^,]+)/
+			  
+			  var temp_pcb_1_o = reg_pcb_1_o.exec(str_status)
+			  var temp_pcb_2_o = reg_pcb_2_o.exec(str_status)
+			  var temp_pcb_3_o = reg_pcb_3_o.exec(str_status)
+			  var temp_pcb_4_o = reg_pcb_4_o.exec(str_status)
+			  
+			  var temp_chip_1_o = reg_chip_1_o.exec(str_status)
+			  var temp_chip_2_o = reg_chip_2_o.exec(str_status)
+			  var temp_chip_3_o = reg_chip_3_o.exec(str_status)
+			  var temp_chip_4_o = reg_chip_4_o.exec(str_status)
+			 var str_ttmp = "{\"PCB\":\""+temp_pcb_1_o[1]+"\",\"CHIP\":\""+temp_chip_1_o[1]+"\"},{\"PCB\":\""+temp_pcb_2_o[1]+"\",\"CHIP\":\""+temp_chip_2_o[1]+"\"},{\"PCB\":\""+temp_pcb_3_o[1]+"\",\"CHIP\":\""+temp_chip_3_o[1]+"\"},{\"PCB\":\""+temp_pcb_4_o[1]+"\",\"CHIP\":\""+temp_chip_4_o[1]+"\"}"
+			
+			  str_total+= str_ttmp
+			}
+
+			  
+			  ///////////////////////
+				str_total += "],"
+				
+				str_total += "\"TotalHW\":"+total_hw+","
+
+				tmp = reg_ant_fan1.exec(str_status)
+				str_total += "\"FanStatus\":\{\"Fan1Speed\":"+tmp[1]+","
+				
+				tmp = reg_ant_fan2.exec(str_status)
+				
+				str_total += "\"Fan2Speed\":"+tmp[1]+"\}\}\}"
+
+			console.log(str_total)
+
+
+			var aaa = JSON.parse(str_total)
+			console.log(aaa)
+			FillData(aaa);
+}
+</script>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="cache-control" content="no-cache" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/cascade.css" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie6.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie7.css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie8.css" /><![endif]-->
+<script type="text/javascript" src="/js/xhr.js"></script>
+<script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/js/json2.min.js"></script>
+<title>Ant Miner</title>
+</head>
+<body class="lang_en">
+<p class="skiplink">
+<span id="skiplink1"><a href="#navigation">Skip to navigation</a></span>
+<span id="skiplink2"><a href="#content">Skip to content</a></span>
+</p>
+<div id="menubar">
+<h2 class="navigation"><a id="navigation" name="navigation">Navigation</a></h2>
+<div class="clear"></div>
+</div>
+<div id="menubar" style="background-color: #0a2b40;">
+<div class="hostinfo" style="float: left; with: 500px;">
+<img src="/images/antminer_logo.png" width="92" height="50" alt="" title="" border="0" />
+</div>
+<div class="clear"></div>
+</div>
+<div id="maincontainer">
+<div id="tabmenu">
+<div class="tabmenu1">
+<ul class="tabmenu l1">
+<li class="tabmenu-item-status"><a href="/index.html">System</a></li>
+<li class="tabmenu-item-system"><a href="/cgi-bin/minerConfiguration.cgi">Miner Configuration</a></li>
+<li class="tabmenu-item-network active"><a href="/cgi-bin/minerStatus.cgi">Miner Status</a></li>
+<li class="tabmenu-item-system"><a href="/network.html">Network</a></li>
+</ul>
+<br style="clear: both" />
+</div>
+</div>
+<div id="maincontent">
+<noscript>
+<div class="errorbox">
+<strong>Java Script required!</strong><br /> You must enable Java Script in your browser or LuCI will not work properly.
+</div>
+</noscript>
+<h2 style="padding-bottom:10px;"><a id="content" name="content">Miner Status</a></h2>
+<div class="cbi-map" id="cbi-bmminerstatus">
+<!-- tblsection -->
+<fieldset class="cbi-section" id="cbi-table-table">
+<legend>Summary</legend>
+<div class="cbi-section-descr"></div>
+<div class="cbi-section-node">
+<table id="summary_list" class="cbi-section-table">
+<tr class="cbi-section-table-titles">
+<th class="cbi-section-table-cell">Elapsed</th>
+<th class="cbi-section-table-cell">GH/S(RT)</th>
+<th class="cbi-section-table-cell">GH/S(avg)</th>
+<th class="cbi-section-table-cell">FoundBlocks</th>
+<th class="cbi-section-table-cell">LocalWork</th>								
+<th class="cbi-section-table-cell">Utility</th>
+<th class="cbi-section-table-cell">WU</th>
+<th class="cbi-section-table-cell">BestShare</th>
+</tr>
+<tr class="cbi-section-table-descr">
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+</tr>
+</table>
+</div>
+</fieldset>
+<!-- /tblsection -->
+<!-- tblsection -->
+<fieldset class="cbi-section" id="cbi-table-table">
+<legend>Pools</legend>
+<div class="cbi-section-descr"></div>
+<div class="cbi-section-node">
+<table id="ant_pools" class="cbi-section-table">
+<tr class="cbi-section-table-titles">
+<th class="cbi-section-table-cell">Pool</th>
+<th class="cbi-section-table-cell">URL</th>
+<th class="cbi-section-table-cell">User</th>
+<th class="cbi-section-table-cell">Status</th>
+<th class="cbi-section-table-cell">Diff</th>
+<th class="cbi-section-table-cell">GetWorks</th>
+<th class="cbi-section-table-cell">Priority</th>
+<th class="cbi-section-table-cell">Accepted</th>		
+<th class="cbi-section-table-cell">Nonce#</th>
+<th class="cbi-section-table-cell">DiffA#</th>
+<th class="cbi-section-table-cell">DiffR#</th>
+<th class="cbi-section-table-cell">DiffS#</th>						         	
+<th class="cbi-section-table-cell">Rejected</th>
+<th class="cbi-section-table-cell">Discarded</th>
+<th class="cbi-section-table-cell">Stale</th>
+<th class="cbi-section-table-cell">LSDiff</th>
+<th class="cbi-section-table-cell">LSTime</th>
+</tr>
+<tr class="cbi-section-table-descr">
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+<th class="cbi-section-table-cell"></th>
+</tr>
+</table>
+</div>
+</fieldset>
+<!-- /tblsection -->
+<!-- tblsection -->
+<fieldset class="cbi-section" id="cbi-table-table">
+<legend>AntMiner</legend>
+<div class="cbi-section-descr"></div>
+<div class="cbi-section-node">
+<table id="ant_devs" class="cbi-section-table">
+	<tr class="cbi-section-table-titles">
+		<th class="cbi-section-table-cell">Chain#</th>
+		<th class="cbi-section-table-cell">ASIC#</th>
+		<th class="cbi-section-table-cell">Frequency</th>
+		<th class="cbi-section-table-cell">GH/S(RT)</th>
+		<th class="cbi-section-table-cell">HW</th>
+		<th class="cbi-section-table-cell">Temp(PCB)</th>
+		<th class="cbi-section-table-cell">Temp(Chip)</th>
+		<th class="cbi-section-table-cell">ASIC status</th>
+	</tr>
+	<tr class="cbi-section-table-descr">
+		<th class="cbi-section-table-cell"></th>
+		<th class="cbi-section-table-cell"></th>
+		<th class="cbi-section-table-cell"></th>
+		<th class="cbi-section-table-cell"></th>
+		<th class="cbi-section-table-cell"></th>
+		<th class="cbi-section-table-cell"></th>
+		<th class="cbi-section-table-cell"></th>
+		<th class="cbi-section-table-cell"></th>
+	</tr>
+</table>
+</div>
+<div class="cbi-section-node" style="margin-top:8px;">
+<table id="ant_fans" class="cbi-section-table">
+<tr class="cbi-section-table-titles">
+	<th class="cbi-section-table-cell" style="width:10%;">Fan#</th>
+	<th class="cbi-section-table-cell">Fan1</th>
+	<th class="cbi-section-table-cell">Fan2</th>
+</tr>
+<tr class="cbi-section-table-row">
+<th class="cbi-rowstyle-1 cbi-value-field">Speed (r/min)</th>
+</td>
+<td id="ant_fan1" class="cbi-rowstyle-1 cbi-value-field"></td>
+<td id="ant_fan2" class="cbi-rowstyle-1 cbi-value-field"></td>
+<td id="ant_fan3" class="cbi-rowstyle-1 cbi-value-field"></td>
+<td id="ant_fan4" class="cbi-rowstyle-1 cbi-value-field"></td>
+<td id="ant_fan5" class="cbi-rowstyle-1 cbi-value-field"></td>
+<td id="ant_fan6" class="cbi-rowstyle-1 cbi-value-field"></td>
+<td id="ant_fan7" class="cbi-rowstyle-1 cbi-value-field"></td>
+<td id="ant_fan8" class="cbi-rowstyle-1 cbi-value-field"></td>
+</tr>
+</table>
+</div>
+</fieldset>
+<!-- /tblsection -->
+<br />
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div style="text-align: center; bottom: 0; left: 0; height: 1.5em; font-size: 80%; margin: 0; padding: 5px 0px 2px 8px; background-color: #918ca0; width: 100%;">
+<font style="color:#fff;">Copyright &copy; 2013-2014, Bitmain Technologies</font>
+</div>
+</body>
+</html>

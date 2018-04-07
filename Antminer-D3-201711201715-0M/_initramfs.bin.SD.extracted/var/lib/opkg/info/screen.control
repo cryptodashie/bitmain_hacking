@@ -1,0 +1,14 @@
+Package: screen
+Version: 4.0.3-r3.2
+Description: Multiplexing terminal manager
+ Screen is a full-screen window manager that multiplexes a physical
+ terminal between several processes, typically interactive shells.
+Section: console/utils
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2+
+Architecture: armv7ahf-vfp-neon
+OE: screen
+Homepage: http://www.gnu.org/software/screen/
+Depends: libc6 (>= 2.17), libtinfo5 (>= 5.9), libpam (>= 1.1.6)
+Source: ftp://ftp.gnu.org/gnu/screen/screen-4.0.3.tar.gz;name=tarball ftp://ftp.debian.org/debian/pool/main/s/screen/screen_4.0.3-11+lenny1.diff.gz;name=patch file://configure.patch file://fix-parallel-make.patch file://screen.pam

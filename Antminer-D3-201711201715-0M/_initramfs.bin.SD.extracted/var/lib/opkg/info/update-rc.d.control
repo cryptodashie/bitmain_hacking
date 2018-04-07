@@ -1,0 +1,13 @@
+Package: update-rc.d
+Version: 0.7-r6.2
+Description: manage symlinks in /etc/rcN.d.
+ update-rc.d is a utilities that allows the management of symlinks to the
+ initscripts in the /etc/rcN.d directory structure.
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2+
+Architecture: all
+OE: update-rc.d
+Homepage: unknown
+Source: git://github.com/philb/update-rc.d.git;protocol=git file://add-verbose.patch file://check-if-symlinks-are-valid.patch file://0001-update-rc.d-make-s-a-noop-when-systemd-is-present.patch

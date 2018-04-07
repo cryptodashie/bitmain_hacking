@@ -1,0 +1,13 @@
+Package: libacl1
+Version: 2.2.51-r3.2
+Description: acl version 2.2.51-r3
+ utilities for access control list
+Section: libs
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: LGPLv2.1+
+Architecture: armv7ahf-vfp-neon
+OE: acl
+Homepage: http://savannah.nongnu.org/projects/acl/
+Depends: libattr1 (>= 2.4.46), libc6 (>= 2.17)
+Source: http://download.savannah.gnu.org/releases/acl/acl-2.2.51.src.tar.gz file://relative-libdir.patch;striplevel=0

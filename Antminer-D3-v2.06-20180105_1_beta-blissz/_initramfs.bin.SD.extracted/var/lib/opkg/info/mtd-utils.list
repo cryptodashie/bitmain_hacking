@@ -1,0 +1,12 @@
+/usr/sbin/nandwrite
+/usr/sbin/flashcp
+/usr/sbin/flash_otp_info
+/usr/sbin/nandtest
+/usr/sbin/mtd_debug
+/usr/sbin/flash_otp_dump
+/usr/sbin/flash_unlock
+/usr/sbin/nanddump
+/usr/sbin/mtdinfo
+/usr/sbin/flash_eraseall
+/usr/sbin/flash_lock
+/usr/sbin/flash_erase

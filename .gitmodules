@@ -1,0 +1,9 @@
+[submodule "cgminer/cgminer"]
+	path = cgminer/cgminer
+	url = https://github.com/ckolivas/cgminer
+[submodule "cgminer/cgminer-dash"]
+	path = cgminer/cgminer-dash
+	url = https://github.com/cryptodashie/cgminer-dash
+[submodule "cgminer/cgminer-ltc"]
+	path = cgminer/cgminer-ltc
+	url = https://github.com/cryptodashie/cgminer-ltc

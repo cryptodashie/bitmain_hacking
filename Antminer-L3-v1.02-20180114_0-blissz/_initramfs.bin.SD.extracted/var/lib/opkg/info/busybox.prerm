@@ -1,0 +1,18 @@
+	# This is so you can make busybox commit suicide - removing busybox with no other packages
+	# providing its files, this will make update-alternatives work, but the update-rc.d part
+	# for syslog, httpd and/or udhcpd will fail if there is no other package providing sh
+	tmpdir=`mktemp -d /tmp/busyboxrm-XXXXXX`
+	ln -s /bin/busybox $tmpdir/[
+	ln -s /bin/busybox $tmpdir/test
+	ln -s /bin/busybox $tmpdir/head
+	ln -s /bin/busybox $tmpdir/sh
+	ln -s /bin/busybox $tmpdir/basename
+	ln -s /bin/busybox $tmpdir/echo
+	ln -s /bin/busybox $tmpdir/mv
+	ln -s /bin/busybox $tmpdir/ln
+	ln -s /bin/busybox $tmpdir/dirname
+	ln -s /bin/busybox $tmpdir/rm
+	ln -s /bin/busybox $tmpdir/sed
+	ln -s /bin/busybox $tmpdir/sort
+	ln -s /bin/busybox $tmpdir/grep
+	export PATH=$PATH:$tmpdir

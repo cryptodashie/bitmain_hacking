@@ -1,0 +1,3 @@
+#!/bin/sh
+	update-alternatives --remove  syslog-init /etc/init.d/syslog.busybox
+	update-alternatives --remove  syslog-startup-conf /etc/syslog-startup.conf.busybox

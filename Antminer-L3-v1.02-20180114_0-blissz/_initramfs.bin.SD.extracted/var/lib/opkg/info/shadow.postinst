@@ -1,0 +1,17 @@
+	if [ "x$D" != "x" ]; then
+	  rootarg="--root=$D"
+	else
+	  rootarg=""
+	fi
+
+	pwconv $rootarg
+	grpconv $rootarg
+	update-alternatives --install /usr/bin/passwd passwd /usr/bin/passwd.shadow 200
+	update-alternatives --install /usr/bin/chfn chfn /usr/bin/chfn.shadow 200
+	update-alternatives --install /usr/bin/newgrp newgrp /usr/bin/newgrp.shadow 200
+	update-alternatives --install /usr/bin/chsh chsh /usr/bin/chsh.shadow 200
+	update-alternatives --install /usr/bin/groups groups /usr/bin/groups.shadow 200
+	update-alternatives --install /usr/sbin/chpasswd chpasswd /usr/sbin/chpasswd.shadow 200
+	update-alternatives --install /bin/login login /bin/login.shadow 200
+	update-alternatives --install /sbin/vipw vipw /sbin/vipw.shadow 200
+	update-alternatives --install /sbin/vigr vigr /sbin/vigr.shadow 200

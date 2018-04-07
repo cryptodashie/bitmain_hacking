@@ -1,0 +1,100 @@
+#!/bin/sh
+OPT=""
+SYSROOT=""
+
+if test "x$D" != "x"; then
+	# Installing into a sysroot
+	SYSROOT="$D"
+	OPT="--root $D"
+
+	# Add groups and users defined for all recipe packages
+	GROUPADD_PARAM=""
+	USERADD_PARAM="--system --home /var/run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi; --system --home /var/run/avahi-autoipd                               --no-create-home --shell /bin/false                               --user-group                               -c \"Avahi autoip daemon\"                               avahi-autoipd"
+else
+	# Installing onto a target
+	# Add groups and users defined only for this package
+	GROUPADD_PARAM="${GROUPADD_PARAM}"
+	USERADD_PARAM="--system --home /var/run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi"
+fi
+
+# Perform group additions first, since user additions may depend
+# on these groups existing
+if test "x$GROUPADD_PARAM" != "x"; then
+	echo "Running groupadd commands..."
+	# Invoke multiple instances of groupadd for parameter lists
+	# separated by ';'
+	opts=`echo "$GROUPADD_PARAM" | cut -d ';' -f 1`
+	remaining=`echo "$GROUPADD_PARAM" | cut -d ';' -f 2-`
+	while test "x$opts" != "x"; do
+		groupname=`echo "$opts" | awk '{ print $NF }'`
+		group_exists=`grep "^$groupname:" $SYSROOT/etc/group || true`
+		if test "x$group_exists" = "x"; then
+			count=1
+			while true; do
+				eval $PSEUDO groupadd $OPT $opts || true
+				group_exists=`grep "^$groupname:" $SYSROOT/etc/group || true`
+				if test "x$group_exists" = "x"; then
+					# File locking issues can require us to retry the command
+					echo "WARNING: groupadd command did not succeed. Retrying..."
+					sleep 1
+				else
+					break
+				fi
+				count=`expr $count + 1`
+				if test $count = 11; then
+					echo "ERROR: tried running groupadd command 10 times without success, giving up"
+					exit 1
+				fi
+			done
+		else
+			echo "Note: group $groupname already exists, not re-creating it"
+		fi
+
+		if test "x$opts" = "x$remaining"; then
+			break
+		fi
+		opts=`echo "$remaining" | cut -d ';' -f 1`
+		remaining=`echo "$remaining" | cut -d ';' -f 2-`
+	done
+fi
+
+if test "x$USERADD_PARAM" != "x"; then
+	echo "Running useradd commands..."
+	# Invoke multiple instances of useradd for parameter lists
+	# separated by ';'
+	opts=`echo "$USERADD_PARAM" | cut -d ';' -f 1`
+	remaining=`echo "$USERADD_PARAM" | cut -d ';' -f 2-`
+	while test "x$opts" != "x"; do
+		# useradd does not have a -f option, so we have to check if the
+		# username already exists manually
+		username=`echo "$opts" | awk '{ print $NF }'`
+		user_exists=`grep "^$username:" $SYSROOT/etc/passwd || true`
+		if test "x$user_exists" = "x"; then
+			count=1
+			while true; do
+				eval $PSEUDO useradd $OPT $opts || true
+				user_exists=`grep "^$username:" $SYSROOT/etc/passwd || true`
+				if test "x$user_exists" = "x"; then
+					# File locking issues can require us to retry the command
+					echo "WARNING: useradd command did not succeed. Retrying..."
+					sleep 1
+				else
+					break
+				fi
+				count=`expr $count + 1`
+				if test $count = 11; then
+					echo "ERROR: tried running useradd command 10 times without success, giving up"
+					exit 1
+				fi
+			done
+		else
+			echo "Note: username $username already exists, not re-creating it"
+		fi
+
+		if test "x$opts" = "x$remaining"; then
+			break
+		fi
+		opts=`echo "$remaining" | cut -d ';' -f 1`
+		remaining=`echo "$remaining" | cut -d ';' -f 2-`
+	done
+fi

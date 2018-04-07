@@ -1,0 +1,20 @@
+Configured Openembedded layers:
+meta-angstrom     = angstrom-v2013.06-yocto1.4:d0f7da44d73f1af26dff0a7579394a36d3098330
+meta-oe           
+meta-efl          
+meta-gpe          
+meta-gnome        
+meta-xfce         
+meta-initramfs    
+toolchain-layer   
+meta-multimedia   
+meta-networking   
+meta-webserver    
+meta-ruby         = angstrom-staging-yocto1.4:2f6f4b70ba03d80f9ddc1e005b9cb5176e328beb
+common-bsp        = dylan:7fdf9c670a10c5031a2d5555c15c45e453de8c21
+meta-ti           = angstrom-staging-yocto1.4:04418dcadb0e3429029f34c6885538fb10624187
+meta-linaro       
+meta-linaro-toolchain = dylan:7ab5e76aac4344e1a228b620f469e868e7914f2f
+meta-antminer     = master:c4f2dafad2c05f5bd7ef9325d5bfef31e0b66ae0
+meta              = angstrom-staging-yocto1.4:affd44c937e2b5d4abd80762a19d759b441ef570
+

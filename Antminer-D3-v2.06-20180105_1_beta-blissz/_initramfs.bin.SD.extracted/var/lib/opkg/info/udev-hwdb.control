@@ -1,0 +1,13 @@
+Package: udev-hwdb
+Version: 1:208-r0.2
+Description: systemd version 208-r0
+ Systemd a init replacement
+Section: base/shell
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2 & LGPLv2.1 & MIT
+Architecture: armv7ahf-vfp-neon
+OE: systemd
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Depends: udev-utils
+Source: http://www.freedesktop.org/software/systemd/systemd-208.tar.xz file://0001-Use-bin-mkdir-instead-of-host-mkdir-path.patch file://binfmt-install.patch file://touchscreen.rules file://00-create-volatile.conf file://init file://var-run.conf file://run-ptest file://journald.conf

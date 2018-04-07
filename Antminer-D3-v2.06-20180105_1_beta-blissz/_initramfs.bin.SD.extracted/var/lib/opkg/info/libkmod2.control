@@ -1,0 +1,15 @@
+Package: libkmod2
+Version: 14+git0+3b38c7fcb58be4ddc34f90454c5f5dc3693d2d85-r0.2
+Description: kmod version 14+gitAUTOINC+3b38c7fcb58be4ddc34f90454c5f5dc3693d2d85-r0
+ kmod is a set of tools to handle common tasks with Linux kernel modules
+ like                insert, remove, list, check properties, resolve
+ dependencies and aliases.
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: LGPL-2.1+
+Architecture: armv7ahf-vfp-neon
+OE: kmod
+Homepage: http://packages.profusion.mobi/kmod/
+Depends: libgcc1 (>= linaro-4.7), libc6 (>= 2.17)
+Source: git://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git file://depmod-search.conf file://run-ptest file://ptest.patch

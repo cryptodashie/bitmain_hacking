@@ -1,0 +1,13 @@
+Package: base-files
+Version: 3.0.14-r89.2
+Description: Miscellaneous files for the base system.
+ The base-files package creates the basic system directory structure and
+ provides a small set of key configuration files for the system.
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2
+Architecture: beaglebone
+OE: base-files
+Homepage: unknown
+Source: file://rotation file://nsswitch.conf file://motd file://inputrc file://host.conf file://profile file://shells file://fstab file://filesystems file://issue.net file://issue file://usbd file://share/dot.bashrc file://share/dot.profile file://licenses/GPL-2 file://fstab

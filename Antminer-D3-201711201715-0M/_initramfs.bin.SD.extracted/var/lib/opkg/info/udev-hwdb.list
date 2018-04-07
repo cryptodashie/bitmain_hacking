@@ -1,0 +1,9 @@
+/lib/udev/hwdb.d/20-pci-vendor-model.hwdb
+/lib/udev/hwdb.d/60-keyboard.hwdb
+/lib/udev/hwdb.d/20-pci-classes.hwdb
+/lib/udev/hwdb.d/20-OUI.hwdb
+/lib/udev/hwdb.d/
+/lib/udev/hwdb.d/20-acpi-vendor.hwdb
+/lib/udev/hwdb.d/20-bluetooth-vendor-product.hwdb
+/lib/udev/hwdb.d/20-usb-classes.hwdb
+/lib/udev/hwdb.d/20-usb-vendor-model.hwdb

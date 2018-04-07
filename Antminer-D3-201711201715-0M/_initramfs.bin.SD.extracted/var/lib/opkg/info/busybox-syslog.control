@@ -1,0 +1,20 @@
+Package: busybox-syslog
+Version: 1.20.2-r8.4
+Description: Tiny versions of many common UNIX utilities in a single small executable.
+ BusyBox combines tiny versions of many common UNIX utilities into a
+ single small executable. It provides minimalist replacements for most of
+ the utilities you usually find in GNU fileutils, shellutils, etc. The
+ utilities in BusyBox generally have fewer options than their full-
+ featured GNU cousins; however, the options that are included provide the
+ expected functionality and behave very much like their GNU counterparts.
+ BusyBox provides a fairly complete POSIX environment for any small or
+ embedded system.
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2 & bzip2
+Architecture: armv7ahf-vfp-neon
+OE: busybox
+Homepage: http://www.busybox.net
+Depends: opkg
+Source: http://www.busybox.net/downloads/busybox-1.20.2.tar.bz2;name=tarball file://B921600.patch file://get_header_tar.patch file://busybox-appletlib-dependency.patch file://run-parts.in.usr-bin.patch file://watch.in.usr-bin.patch file://busybox-udhcpc-no_deconfig.patch file://sys_resource.patch file://wget_dl_dir_fix.patch file://find-touchscreen.sh file://busybox-cron file://busybox-httpd file://busybox-udhcpd file://default.script file://simple.script file://hwclock.sh file://mount.busybox file://syslog file://syslog-startup.conf file://mdev file://mdev.conf file://umount.busybox file://defconfig file://busybox-mkfs-minix-tests_bigendian.patch file://fix-for-spurious-testsuite-failure.patch file://busybox-1.20.2-kernel_ver.patch file://stat-usr-bin.patch file://busybox-syslog.service.in file://busybox-klogd.service.in file://testsuite-du-du-k-works-fix-false-positive.patch file://strict-atime.patch file://fail_on_no_media.patch file://inetd.conf file://inetd file://busybox-syslog.default file://linaro.cfg

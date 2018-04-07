@@ -1,0 +1,2 @@
+/etc/rcS.d/S50avahi
+/etc/init.d/avahi

@@ -1,0 +1,2 @@
+#!/bin/sh
+	update-alternatives --remove  functions /etc/init.d/functions.initscripts

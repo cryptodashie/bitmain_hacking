@@ -1,0 +1,13 @@
+Package: libcap2
+Version: 2.22-r5.2
+Description: libcap version 2.22-r5
+ support for getting/setting POSIX.1e capabilities
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: BSD | GPLv2
+Architecture: armv7ahf-vfp-neon
+OE: libcap
+Homepage: http://sites.google.com/site/fullycapable/
+Depends: libc6 (>= 2.17)
+Source: ftp://ftp.debian.org/debian/pool/main/libc/libcap2/libcap2_2.22.orig.tar.gz

@@ -1,0 +1,4 @@
+#!/bin/sh
+if test "x$D" = "x"; then
+	/etc/init.d/lighttpd stop
+fi

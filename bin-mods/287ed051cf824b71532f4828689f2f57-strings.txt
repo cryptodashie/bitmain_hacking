@@ -1,0 +1,2399 @@
+/lib/ld-linux-armhf.so.3
+ D""
+   T
+gII"
+|E>
+JEK/
+|9@
+Dmw3
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_Jv_RegisterClasses
+_ITM_registerTMCloneTable
+librt.so.1
+clock_gettime
+clock_nanosleep
+libm.so.6
+llround
+floor
+log10
+libncurses.so.5
+stdscr
+LINES
+nocbreak
+mvwin
+wresize
+_fini
+immedok
+noecho
+werase
+wtouchln
+delwin
+mvwprintw
+wattr_off
+wattr_on
+endwin
+wgetnstr
+wrefresh
+wclear
+wgetch
+beep
+whline
+wmove
+scrollok
+leaveok
+wclrtoeol
+newwin
+initscr
+libtinfo.so.5
+idlok
+halfdelay
+libpthread.so.0
+sem_post
+sigaction
+sem_trywait
+recvfrom
+sem_init
+pthread_mutex_unlock
+pthread_rwlock_rdlock
+pthread_join
+pthread_create
+pthread_cancel
+sendto
+pthread_setcancelstate
+pthread_rwlock_wrlock
+__errno_location
+__pthread_unwind_next
+fork
+lseek
+connect
+send
+pthread_cond_signal
+pthread_mutex_lock
+__pthread_register_cancel
+pthread_self
+pthread_mutex_trylock
+pthread_rwlock_init
+pthread_mutex_destroy
+pthread_cond_wait
+accept
+sem_timedwait
+pthread_cond_destroy
+pthread_rwlock_unlock
+pthread_cond_timedwait
+pthread_detach
+pthread_setcanceltype
+sem_wait
+recv
+__pthread_unregister_cancel
+pthread_rwlock_trywrlock
+pthread_cond_init
+sem_destroy
+pthread_rwlock_destroy
+system
+pthread_cond_broadcast
+pthread_testcancel
+fcntl
+pthread_mutex_init
+raise
+libgcc_s.so.1
+__aeabi_unwind_cpp_pr0
+libc.so.6
+socket
+fflush
+strcpy
+exit
+execl
+execv
+sprintf
+fopen
+strncmp
+pipe
+__strdup
+perror
+__isnan
+__isinf
+strncpy
+puts
+listen
+select
+mkdir
+realloc
+abort
+stdin
+strtoll
+strpbrk
+kill
+inet_pton
+__assert_fail
+flock
+strtod
+strtof
+strtok
+strtol
+isatty
+sched_yield
+syslog
+cfsetispeed
+fgetc
+fgets
+calloc
+strlen
+prctl
+sigemptyset
+openlog
+getaddrinfo
+memset
+dirname
+localeconv
+strstr
+tcsetattr
+bind
+fseek
+memcmp
+getnameinfo
+getsockopt
+dup2
+shutdown
+vsnprintf
+__sigsetjmp
+stdout
+fputc
+inet_addr
+memcpy
+fclose
+strtoul
+setsockopt
+malloc
+strcat
+strcasecmp
+__ctype_b_loc
+getenv
+sscanf
+nice
+stderr
+ioctl
+strncasecmp
+strncat
+fileno
+usleep
+fwrite
+fread
+gettimeofday
+tcflush
+lldiv
+localtime
+strchr
+fdopen
+qsort
+tcgetattr
+__ctype_toupper_loc
+__ctype_tolower_loc
+freeaddrinfo
+cfsetospeed
+__xstat
+errx
+memmove
+access
+strcmp
+strerror
+__libc_start_main
+stpcpy
+vfprintf
+sysconf
+free
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+_end
+GLIBC_2.4
+GCC_3.5
+.Ap@-
+.A0r
+iNWq
+!(EDsp
+!(E]R|
+@ #!
+!1C "
+mt_disable
+miner_thread
+cgminer.conf
+test_nonce
+parse_config
+get_statline
+add_pool
+total_staged
+clear_pool_work
+pool_tclear
+pool_tset
+wake_gws
+restart_wait
+hash_pop
+clear_stratum_shares
+inc_dev_status
+inc_hw_errors
+inc_hw_errors_with_diff
+inc_hw_errors_with_diff
+lock_curses
+unlock_curses
+switch_pools
+work_completed
+add_queued
+age_queued_work
+take_queued_work_bymidstate
+total_work_inc
+share_diff
+update_work_stats
+submit_nonce_1
+flush_queue
+find_queued_work_bymidstate
+find_queued_work_byid
+clone_queued_work_bymidstate
+gen_stratum_work
+clone_queued_work_byid
+get_thread
+sharelog
+get_devices
+zero_stats
+hashmeter
+hashmeter
+hash_driver_work
+current_pool
+block_exists
+test_work_current
+set_curblock
+hash_push
+inc_work_stats
+cp_prio
+test_pool_thread
+wait_lpcurrent
+supports_resume
+parse_stratum_response
+share_result
+reject
+reap_curl
+prune_stratum_shares
+stratum_sthread
+stratum_sthread
+stale_work
+discard_stale
+restart_thread
+                                        
+watchdog_thread
+get_queued
+fill_queue
+submit_work_async
+submit_nonce_2
+submit_tested_work
+submit_nonce
+enable_device
+add_cgpu
+main
+000000029c6bf469abe4ad37605c097a860cff3cf5c1ef4377618f74000000000000000082b1514e7b6565941e5824f084292164ec5f97e7ea20c494bd96e524d478977b536dd2261900896c8b10020000000080000000000000000000000000000000000000000000000000000000000000000000000000000000008002000064e4e3becc01064d808269b330f40f4de82dc92e894d635025daa3e2e2c410b4
+00000002e790c23987181950eeb144591c3ac4d06c0705f2801d097600000000000000009ebbce2f5f0d6cc0aca284ecb1059c856ef2f7f42e7edd403d246754ee4c905a536dd2a91900896ccfda03100000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200004a78daf1b5eb3397af1c00dbd9b06659cdc04183c8baaf5be1dbf32f79e00459
+000000023e91fce7300a792bfbaa0c76e1aa5f9b546c1db582aee4ff0000000000000000f04650a8e748d2e6fde86a8a920b285f3e22398f583700236958323ef9ea8321536dcf431900896cb4570e200000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200000a1d654ae2b06f219ccf4601933fab408de1c3b7c8c9c85e03231d4aaf5a26cd
+000000023e91fce7300a792bfbaa0c76e1aa5f9b546c1db582aee4ff000000000000000074b39134c2930d2f2e7339f9d502c776c44d6ee599f7efebec6c9bbd04787aae536dce561900896ce2710f3000000080000000000000000000000000000000000000000000000000000000000000000000000000000000008002000094e60c1180022f337232ab3d298f838304b6008ab237cf7e1717f1933407e592
+000000023e91fce7300a792bfbaa0c76e1aa5f9b546c1db582aee4ff0000000000000000c5b821fb0b26d63b00cc26e7ac4d6cfd1d3fc109b0db188e7e792e3d18342919536dce501900896ced480540000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000a290eac61642949c00d17f7cd5980abedb8647fc5df9955dcfe4d56a50a0c564
+00000002e790c23987181950eeb144591c3ac4d06c0705f2801d097600000000000000006e9d94bf5a0ab7b202d39e1200af96074e4f641f4e55e3e9e3aee72aa00a70e9536dd2ae1900896c60f701500000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200001477ca8536702eacbd65a6a162cfe90d62016a14ffe58d52b7dd4c3628a27e5b
+00000002194bb5b4f8ac3392fbd66f3dd3e9dcdb22370e380837fe44000000000000000003bbb250f2dc23717e8192c0b8bec6a175cd059e4089d325006eaee3446254c9536dd39e1900896c16980c6000000080000000000000000000000000000000000000000000000000000000000000000000000000000000008002000068db599d6b7a55fd61d4244a3dfa465055ead6b5c0a37c7a3d4555b58e99065e
+000000023e91fce7300a792bfbaa0c76e1aa5f9b546c1db582aee4ff000000000000000072e17babd4089b204797cebda7dc6e277950eab1b2908991ae1d72335f82d204536dcf441900896c5f2d0970000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000c7d601ce3b01e569a49508d541bbcba9b3c8394b1834523ef1e5cb2c60bd34a3
+000000029c6bf469abe4ad37605c097a860cff3cf5c1ef4377618f74000000000000000022388b6f022144db134af1bc8e61b385ca37cae038c1d165ae98c496b3b41e8b536dd2101900896ca8ea0e80000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000410761e97e67b494fd547cfe9ffbb36893da7aec75c6b51b8d5f38f87b5d63cf
+000000029c6bf469abe4ad37605c097a860cff3cf5c1ef4377618f7400000000000000000e1f0cfdf5ad8248fc4520f3bb0b2040226430348cddeff5ca9181beeb78870d536dd2161900896c0d600f90000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000ad1a8d354a7e8b13ec47f4c3d907d00945a61e86059f4943e42c1e52398eba5d
+00000002194bb5b4f8ac3392fbd66f3dd3e9dcdb22370e380837fe4400000000000000002232a16d38cc0e13e4b16d917bff4c34727deb3b5c50e424fb8453ff9b2adcb4536dd4231900896cbf1002a0000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000adc67d38f31f589b18b9d8e531b994ce5733c021a03d88d38611ee6b4c2710a5
+00000002194bb5b4f8ac3392fbd66f3dd3e9dcdb22370e380837fe440000000000000000a2860471277b4a93fea2a8b6d8c281fab7bde3b78f2acd1bfdc89d464ed3bb3c536dd35e1900896c9d3004b0000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000537686c611aae4397c7c04b2c190708453d00e8c9563525610c31ba46e80dbc2
+00000002194bb5b4f8ac3392fbd66f3dd3e9dcdb22370e380837fe440000000000000000f370230607998fbbd10275c5890885fcd81b68018ba2373abf0f93a06d02ab28536dd33e1900896c37750bc00000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200001fdda952da6abd70022a6e5f2b9dc5e1b66011128c3fa249f0b7439f00d5943e
+00000002c0a2c91fc41254539a5b2a27be28de2a6187e2af3f129d6300000000000000005e45ffc512d5ca3bc4d2063dd3af1669c296ae126a5a2ef896d1e190cedf67b9536dd46b1900896cd55b00d000000080000000000000000000000000000000000000000000000000000000000000000000000000000000008002000007094d6cbe76538a88612624fc5e655cc405cb8198dcad516b88dbac5bf8b906
+00000002194bb5b4f8ac3392fbd66f3dd3e9dcdb22370e380837fe44000000000000000027c548815127c125147af91c356c293f0defbd2771f8dc3b1142b367528656db536dd37c1900896c96770ae00000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200001bdbb3b1be7216872ea787627b03c389a527451f6dd832d8540874306f9c07c6
+00000002194bb5b4f8ac3392fbd66f3dd3e9dcdb22370e380837fe440000000000000000adef758770bb90c5b13769c5b61affb322b24c747573b38ebe2ee81748d0b557536dd4071900896c29f001f00000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200001ac8eea63285353944e40eec54d2dd6cd0994b447429bb0ed0598d38f42da0e2
+00000002c01f502cb3e9fdb053230ec12a4954c1021a6b35862b5e29000000000000000084d1b83ae44057025e8c5b5756b44f04df5fffe4a7a30e5c12d12a97a7a4c2ea536dce431900896cb6d60e00000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000d08f7e14c50dad77dc238b4db2901a0578e657b1954779ab9cd82a73829edf7f
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a44630000000000000000c1a174254a6593ffba987f68fe26e716e3c129a7f33a9c43ae7ecf90c8cd0d2c536dc4e61900896c8f8100100000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200006700aeedada2b3877900b58a183c42c40949956bb8b4a8d21481f8936b572922
+00000002138cf4b61dff74e3c26b2d80045064e8ab4802521bab2cda000000000000000071eef64a7ef4e47cda16e96673197d36c7235a4aadd23c21a38ce53827d1f8bc536dc4d71900896ce96b00200000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200000730cf7a6b8a85eb1cc017b109d23c392464f99aa8c020ea107c525b671adde0
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a44630000000000000000fe2c6b926468565e524ab7c2f111035dcde7c60955842111930589eccb410f83536dc66b1900896cf429003000000080000000000000000000000000000000000000000000000000000000000000000000000000000000008002000027dbb374a97f15c59587256662f36904d075d0e61f749618182711288ac617c7
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a4463000000000000000003073385e05c29f0435a6001c8eca9c8d5602890aeff9d4d103d3383cf80dae5536dc57c1900896c821d00400000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200007da3b97e82c0c3125a58dad8a0d1d0369244731f3b096e972484298d15b843d9
+000000029ca55e5f1bc0328c84f358fddadc13cb232599bc2ca9dbe10000000000000000b5b4d19c20a7fc2b174ff673c006edd2247c4b2336571864df93eb7ec0c8c276536dfe041900896ce63c00500000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200001514bd586511e531e2b6277a6d112b171f9e008d56ef4a971e619acf22e75072
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a446300000000000000003e3030629ff4258056dc9efaf922bd173a65f65ee799b0c765097d3deeddef10536dc4d81900896c14430060000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000dcb77a9c36d894d2dbc31437e5c2a1564e927937848ea2eb20b38638afc64b96
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a446300000000000000005513c22bb99e9daa9936b0df5dce64d7737e3706be99e5098d112002492cf81b536dc5691900896cd44100700000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200000d896267fda5dda0f85308e77f754c8b94b7b88e3cb315475cd9efd16401e3ce
+00000002e155f07e652e4d671ca4db51bbde14d2b5ae34ee67ecc74400000000000000004af5cffd7e5a7087f1b484b526c7350c86d8389283509ca878502f792115e8dc536dc6ad1900896c999d0080000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000339354568f506ac3cd69bb427b1af83a0473b87c16bf3b562a93d0a2ffc53e54
+000000029ca55e5f1bc0328c84f358fddadc13cb232599bc2ca9dbe100000000000000005925a624e5c84f96d2c34dce3b6a736addb891724b48a36320c7494435f9c915536dfe621900896c14fb00900000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200008362009c07cf48249f481be6b79e67247cab1d20050cf11c276085b90732110c
+00000002e155f07e652e4d671ca4db51bbde14d2b5ae34ee67ecc74400000000000000001e69f1d6507f4b7b50980930f7d8089834fbe65f0980b8592d53cdda08e50d24536dc7da1900896c5eeb00a000000080000000000000000000000000000000000000000000000000000000000000000000000000000000008002000021e4f654d26ab8c9164ff311657a9f9c4cdc0e8a09334925f7c02138819d7e61
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a4463000000000000000064923b63f53c72c04ebe6c1c9140b6377132b6e50865814fe562291bd023d348536dc65a1900896cc52e00b000000080000000000000000000000000000000000000000000000000000000000000000000000000000000008002000055db91a25401a89daf9ff7d7954bab722b894ba480fefaf1f0a95aaf5f600567
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a44630000000000000000ee9817160e35d4410601c8dc741c1a810c485f3b40a0859be5f58f0bf6ef1694536dc6321900896c6e1f00c0000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000ae215785178ff6350064060ebbb219a71716a10e88528fc4bb1cb5c8fdd0cf60
+000000029ca55e5f1bc0328c84f358fddadc13cb232599bc2ca9dbe100000000000000001e514cf738455a54f004ec86edafcfd9fd2022017bb31c245340353911744fb7536dfe1f1900896c265f00d0000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000dcafaa86defe850b057ae74f7218a79b0ede086a196f18f0e7c585eb88d1139a
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a446300000000000000005edbd53fcc64850b5334678199d769514818fbcc79861fc77e572bb4753b7fe2536dc5d91900896c938900e00000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200005e653df5956ece518a78a5d11297431af94ce8ba91d80cfb2aa8c5b3095fa256
+000000023bf53ef343a50f7599601f849c93ecce63530b0b449a44630000000000000000596fc4aa5da839ba267c36aa1a5b29d813747b2273dc03aa9e404c4da0238e2b536dc4cc1900896c9e7000f00000008000000000000000000000000000000000000000000000000000000000000000000000000000000000800200000e23806a533bd956787eef52dd8edee456c60d6cecbb6175458ee53fc8c6c813
+load_temp_cutoffs
+signal_work_update
+%s %d duplicate share detected as HW error
+Built with bitmain_D1 mining support.
+Failed to open fd %u for share log
+Standard output missing for share log
+Failed to open %s for share log
+%.3g%s
+%d%s
+%*.*f%s
+BENCHFILE nonce %u=0x%08x for work=%s
+Thread %d being disabled
+Waiting on sem in miner thread
+cgminer.c
+Thread %d being re-enabled
+%d/Miner
+WTF No pool %d found!
+Unable to set thread to low priority
+Value out of range
+Invalid time set.
+Invalid time set, should be HH:MM
+%d:%d
+htarget %08lx diff1 %08lx hash %08lx
+Failed to malloc scratchbuf in scanhash_scrypt
+[%d-%02d-%02d %02d:%02d:%02d]
+Global quota greatest common denominator set to %lu
+%d-%d
+stratum+tcp://
+Invalid parameters for set temp cutoff
+Invalid value passed to set temp cutoff
+Discarded cloned or rolled work
+"pools" : [
+"quota" : "%s%s%s%d;%s",
+"url" : "%s%s%s%s",
+"user" : "%s",
+"pass" : "%s"
+"%s" : true
+"%s" : "%d"
+"%s" : "%.1f"
+"%s" : "%s"
+"balance" : true
+"load-balance" : true
+"round-robin" : true
+"rotate" : "%d"
+HOME
+.cgminer/
+Diff zero passed to set_target
+Generated target %s
+%s: 1 *hash_32 = 0x%08x
+%s: 2 *hash_32 = 0x%08x
+%s opt_scrypt = %d
+%s: diff1targ = 0x%08x
+%02X
+Malloc failure in json error
+JSON decode of file '%s' failed
+Too many levels of JSON includes (limit 10) or a loop
+Invalid value
+include
+!(opt->type & OPT_SUBTABLE)
+Invalid config option %s: %s
+Parsing JSON option %s: %s
+http://
+https://
+Failed to malloc httpinput
+Failed to create restart thread
+BENCHFILE Invalid benchfile NULL
+BENCHFILE Failed to open benchfile '%s'
+BENCHFILE Failed to read benchfile '%s'
+BENCHFILE No work in benchfile '%s'
+BENCHFILE Invalid input file line %d - field count is %d but should be %d
+BENCHFILE Invalid input file line %d field %d (%s) length is %d but should be %d
+BENCHFILE Invalid input file line %d field %d (%s) length is %d but should be least %d
+NonceTime
+0000000%c
+%.8s
+%08lx
+%s%d 
+(%ds):%s (avg):%sh/s | A:%.0f R:%.0f HW:%d WU:%.1f/m
+tailsprintf buffer overflow in %s %s line %d
+Shutdown signal received.
+WTF MUTEX ERROR ON LOCK! errno=%d in %s %s():%d
+WTF WRLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+Failed to pthread_mutex_init errno=%d in %s %s():%d
+Failed to pthread_rwlock_init errno=%d in %s %s():%d
+Failed to malloc pool in add_pool
+Failed to pthread_cond_init in add_pool
+{"method": "getwork", "params": [], "id":0}
+Failed to find : delimited user info
+Use only user + pass or userpass, but not both
+No semicolon separated quota;URL pair found
+No parameter for quota found
+No parameter for URL found
+Invalid negative parameter for quota set
+Setting pool %d to quota %d
+WTF MUTEX ERROR ON UNLOCK! errno=%d in %s %s():%d
+Cleared %d work items due to stratum disconnect on pool %d
+Retrieving block template from pool %s
+Testing pool %s
+Failed to create stratum sthread
+Failed to create stratum rthread
+CURL initialisation failed
+Probing for GBT support
+GBT coinbase + append support found, switching to GBT protocol
+GBT coinbase without append found, switching to GBT solo protocol
+No GBT coinbase + append support found, using getwork protocol
+Testing pool %d stratum %s
+Switching pool %d %s to %s
+FAILED to retrieve work from pool %u %s
+Pool %u slow/down or URL or credentials invalid
+Waiting for work to be available from pools.
+Work available from pools, resuming.
+Lost %d shares due to stratum disconnect on pool %d
+%s: %s%d: invalid nonce - HW error
+%s%s
+WTF RWLOCK ERROR ON UNLOCK! errno=%d in %s %s():%d
+Switching to pool %d %s
+Successfully rolled work
+Failed to calloc work in make_work
+New best share: %s
+Found block for pool %d!
+Share above target
+Discarded queued work item
+WTF RDLOCK ERROR ON LOCK! errno=%d in %s %s():%d
+Generated stratum merkle %s
+Generated stratum header %s
+Work job_id %s nonce2 %llu ntime %s
+Received kill message
+Killing off watchpool thread
+Killing off watchdog thread
+Shutting down mining threads
+Killing off API thread
+Killing off mining threads
+%lu,%s,%s,%s,%s%u,%u,%s,%s
+sharelog printf error
+sharelog fwrite error
+[thread %d: %llu Mhashes, %.1f mhash/sec]
+%s: logline: %s          
+cgminer time error total_secs = %f last_total_secs = %f
+(%ds):%s (1m):%s (5m):%s (15m):%s (avg):%sh/s
+%s: statusline: %s          
+%s %d failure, disabling!
+Summary of runtime statistics:
+Started at %s
+Pool: %s
+Runtime: %d hrs : %d mins : %d secs
+Average hashrate: %.1f Mhash/s
+Solved blocks: %d
+Best share difficulty: %s
+Share submissions: %lld
+Accepted shares: %lld
+Rejected shares: %lld
+Accepted difficulty shares: %1.f
+Rejected difficulty shares: %1.f
+Reject ratio: %.1f%%
+Hardware errors: %d
+Utility (accepted shares / min): %.2f/min
+Work Utility (diff1 shares solved / min): %.2f/min
+Stale submissions discarded due to new blocks: %lld
+Unable to get work from server occasions: %d
+Work items generated locally: %d
+Submitting work remotely delay occasions: %d
+New blocks detected on network: %d
+SOLVED %d BLOCK%s!
+ Share submissions: %lld
+ Accepted shares: %lld
+ Rejected shares: %lld
+ Accepted difficulty shares: %1.f
+ Rejected difficulty shares: %1.f
+ Reject ratio: %.1f%%
+ Items worked on: %d
+ Stale submissions discarded due to new blocks: %d
+ Unable to get work from server occasions: %d
+ Submitting work remotely delay occasions: %d
+Summary of per device statistics:
+Mined %.0f accepted shares of %d requested
+WARNING - Mined only %.0f shares of %d requested.
+Attempting to restart %s
+Failed to restart application
+GBT 
+test_work_current OOM
+Network diff set to %s
+Deleted block %d from database
+[%02d:%02d:%02d]
+New block: %s... diff %s
+Stratum from pool %d detected new block
+%sLONGPOLL from pool %d detected new block
+New block detected on network before pool notification
+New block detected on network
+Stale data from pool %d
+Pool %d now up to date
+Stratum from pool %d requested work restart
+%sLONGPOLL from pool %d requested work restart
+Pushing work from pool %d to hash queue
+Pool %d %s not responding!
+Pool %d %s failed to return work
+Pool %d %s alive, testing stability
+Pool %d %s alive
+Stratum connection to pool %d resumed
+Switching to pool %d %s - first alive pool
+ BLOCK!
+%d/RStratum
+Stratum select failed on pool %d with value %d
+Stratum connection to pool %d interrupted
+JSON decode failed(%d): %s
+result
+(unknown reason)
+JSON-RPC non method decode failed: %s
+Accepted untracked stratum share from pool %d
+Rejected untracked stratum share from pool %d
+Pool %d stratum share result lag time %d seconds
+%08lx Diff %s/%llu%s
+PROOF OF WORK RESULT: true (yay!!!)
+Accepted %s %s %d pool %d %s%s
+Accepted %s %s %d %s%s
+accept
+Successfully mined %d accepted shares as requested and exiting.
+Rejecting pool %d now accepting shares, re-enabling!
+PROOF OF WORK RESULT: false (booooo)
+reject-reason
+Rejected %s %s %d %s%s %s%s
+Pool %d rejected %d sequential shares, disabling!
+Unknown stratum msg: %s
+Watchpool
+Reaped %d curl%s from pool %d
+Lost %d shares due to no stratum share response from pool %d
+Pool %d %s stable for 5 mins
+%d/SStratum
+Failed to create stratum_q in stratum_sthread
+Stratum q returned empty work
+Pool %d asking for inappropriately long nonce2 length %d
+Not attempting to submit shares
+%s: nonce = 0x%08x
+%s: *nonce2_64 = 0x%x
+Filtering duplicate share to pool %d
+{"params": ["%s", "%s", "%s", "%s", "%s"], "id": %d, "method": "mining.submit"}
+Submitting share %08lx to pool %d
+Pool %d communication resumed, submitting work
+Successfully submitted, adding to stratum_shares db
+Pool %d stratum share submission failure
+Lowmem option prevents resubmitting stratum share
+No matching session id for resubmitting stratum share
+Failed to submit stratum share, discarding
+Pool %d stratum share submission lag time %d seconds
+Work stale due to block mismatch
+Work stale due to stratum inactive
+Work stale due to stratum job_id mismatch
+Work stale due to expiry
+Work stale due to fail only pool mismatch
+Discarded %d stales that didn't match current hash
+Watchdog
+ cgminer version 4.9.0 - Started: %s
+ A:%.0f  R:%.0f  HW:%d  WU:%.1f/m | ST: %d  SS: %lld  NB: %d  LW: %d  GF: %d  RF: %d
+ ST: %d  SS: %lld  NB: %d  LW: %d  GF: %d  RF: %d
+ A:%.0f  R:%.0f  HW:%d  WU:%.1f/m
+ Connected to multiple pools with%s block change notify
+ Connected to %s diff %s with stratum as user %s
+ Connected to %s diff %s with%s %s as user %s
+ Block: %s...  Diff:%s  Started: %s  Best share: %s   
+[P]ool management [S]ettings [D]isplay options [Q]uit
+%-8d
+ %*d: %s %-8s: 
+%s | 
+DEAD  
+SICK  
+OFF   
+REST  
+%6s / %6sh/s WU:%*.1f/m A:%*.0f R:%*.0f HW:%*d
+%6s / %6sh/s WU:%*.1f/m
+Pausing execution as per stop time %02d:%02d scheduled
+Terminating execution as planned
+Will restart execution as scheduled at %02d:%02d
+Restarting execution as per start time %02d:%02d scheduled
+Will pause execution as scheduled at %02d:%02d
+Pushing sem post to thread %d
+%s %d
+%s: Recovered, declaring WELL!
+%s: Idle for more than 60 seconds, declaring SICK!
+%s: Attempting to restart
+%s: Not responded for more than 10 minutes, declaring DEAD!
+Popping work from get queue to get work
+Get work blocked for %d seconds
+Got work from get queue to get work for thread %d
+work prepare failed, exiting mining thread %d
+Driver %s working diff changed to %.0f
+Get A Error Data To Push!DROP!
+Accepted %s %d benchmark share nonce %08x
+Pool %d stale share detected, submitting as user requested
+Pool %d stale share detected, submitting as pool requested
+Pool %d stale share detected, discarding
+discard
+Pushing pool %d work to stratum queue
+Discarding work from removed pool
+Pushing submit work to work thread
+Failed to create submit_work_thread
+%s %d: Share above target
+%s end
+%s %s %d: Share above target
+%s ret1 = %d
+%s ret2 = %d
+Failed to malloc input
+enabled
+[N]ormal [C]lear [S]ilent mode (disable all output)
+[D]ebug:%s
+[P]er-device:%s
+[Q]uiet:%s
+[V]erbose:%s
+[R]PC debug:%s
+[W]orkTime details:%s
+co[M]pact: %s
+[T]oggle status switching:%s
+w[I]descreen:%s
+[Z]ero statistics
+[L]og interval:%d
+Select an option or any other key to return
+Quiet mode %s
+Verbose mode %s
+Output mode reset to normal
+Debug mode %s
+Compact mode %s
+Per-device stats %s
+RPC protocol debugging %s
+Interval in seconds
+Invalid selection
+Log interval set to %d seconds
+WorkTime details %s
+[Q]ueue: %d
+[S]cantime: %d
+[E]xpiry: %d
+[W]rite config file
+[C]gminer restart
+Extra work items to queue
+Set scantime in seconds
+Set expiry time in seconds
+Config filename to write (Enter for default) [%s]
+File exists, overwrite?
+Cannot open or create file
+Are you sure?
+Failed to malloc userpass
+Input server details.
+Username
+Password
+Dead
+Alive
+Does not have
+%d: 
+Enabled 
+Disabled 
+Rejecting 
+%s Quota %d Prio %d: %s  User:%s
+Current pool management strategy: %s
+Set to rotate every %d minutes
+[F]ailover only %s
+Pool [A]dd [R]emove [D]isable [E]nable [Q]uota change
+[C]hange management strategy [S]witch pool [I]nformation
+Or press any other key to continue
+Cannot remove last pool
+Select pool number
+Unable to remove pool due to activity
+Cannot disable last pool
+%d: %s
+Select strategy number type
+Select interval in minutes
+Pool: %s
+SOLVED %d BLOCK%s!
+%s own long-poll support
+ Queued work requests: %d
+ Share submissions: %lld
+ Accepted shares: %lld
+ Rejected shares: %lld
+ Accepted difficulty shares: %1.f
+ Rejected difficulty shares: %1.f
+ Reject ratio: %.1f%%
+ Items worked on: %d
+ Discarded work due to new blocks: %d
+ Stale submissions discarded due to new blocks: %d
+ Unable to get work from server occasions: %d
+ Submitting work remotely delay occasions: %d
+Set quota
+Invalid negative quota
+Input
+copy
+original
+Failed to allocate device_drv copy of %s (%s)
+cgminer.log
+Failed to pthread_cond_init lp_cond
+Failed to pthread_cond_init restart_cond
+Failed to pthread_cond_init gws_cond
+Failed to create getq
+%s %s
+/usr/bin
+main OOM
+Options for both config file and command line
+Options for command line only
+Unexpected extra commandline arguments
+Cannot use benchmark mode with scrypt
+Benchfile
+Benchmark
+Open miner version file %s error
+Read miner version file %s error %d
+Miner compile time: %s type: %s
+Log file path: %s Open flag: %s
+Log work asic num empty
+Log work asic num must be 1, 32, 64
+Log work path: %s Asic num: %s
+Log work path: %s
+%s.txt
+Log work open file %s
+%s%02d.txt
+Log work open asic %d file %s
+%s%02d_%02d.txt
+%s_diff_%02d.txt
+Log work open diff file %s
+Started %s
+Loaded configuration file %s
+Fatal JSON error in configuration file.
+Configuration file could not be used.
+Error in configuration file, partially loaded.
+Start cgminer with -T to see what failed to load.
+Failed to calloc control_thr
+All devices disabled, cannot mine!
+Too many values passed to set temp cutoff
+Need to specify at least one pool server.
+Pool setup failed
+No login credentials supplied for pool %u %s
+pipe - failed to create pipe for --monitor
+dup2 - failed to alias stderr to write end of pipe for --monitor
+close - failed to close write end of pipe for --monitor
+signal - failed to edit signal mask for --monitor
+fork - failed to fork child process for --monitor
+dup2 - in child, failed to alias read end of pipe to stdin for --monitor
+/bin/bash
+execl - in child failed to exec user specified command for --monitor
+close - failed to close read end of pipe for --monitor
+Failed to calloc mining_thr
+Failed to calloc mining_thr[%d]
+thread %d create failed
+Probing for an alive pool
+No servers were found that could be used to get work from.
+Please check the details from the list below of the servers you have input
+Most likely you have input the wrong URL, forgotten to add a port, or have not set up workers
+Pool: %d  URL: %s  User: %s  Password: %s
+No servers could be used! Exiting.
+Press any key to exit, or cgminer will wait indefinitely for an alive pool.
+watchpool thread create failed
+watchdog thread create failed
+API thread create failed
+input thread create failed
+incorrect total_control_threads (%d) should be 8
+Unable to set thread to high priority
+Work update message received
+Selecting pool %d for work
+Generated stratum work
+Generated benchfile work
+Generated benchmark work
+000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000
+224.0.0.75
+0.0.0.0
+cgminer 4.9.0
+Failover
+Round Robin
+Rotate
+Load Balance
+Balance
+--version-file
+Set miner version file
+--logfile-openflag
+Set log file open flag, default: a+
+--logwork
+Set log work file path, following: minertext
+--logwork-asicnum
+Set log work asic num, following: 1, 32, 64
+--logwork-diff
+Allow log work diff
+--logfile
+Set log file, default: cgminer.log
+--api-allow
+Allow API access only to the given list of [G:]IP[/Prefix] addresses[/subnets]
+--api-description
+Description placed in the API status header, default: cgminer version
+--api-groups
+API one letter groups G:cmd:cmd[,P:cmd:*...] defining the cmds a groups can use
+--api-listen
+Enable API, default: disabled
+--api-mcast
+Enable API Multicast listener, default: disabled
+--api-mcast-addr
+API Multicast listen address
+--api-mcast-code
+Code expected in the API Multicast message, don't use '-'
+--api-mcast-des
+Description appended to the API Multicast reply, default: ''
+--api-mcast-port
+API Multicast listen port
+--api-network
+Allow API (if enabled) to listen on/for any address, default: only 127.0.0.1
+--api-port
+Port number of miner API
+--api-host
+Specify API listen address, default: 0.0.0.0
+--balance
+Change multipool strategy from failover to even share balance
+--benchfile
+Run cgminer in benchmark mode using a work file - produces no shares
+--benchfile-display
+Display each benchfile nonce found
+--benchmark
+Run cgminer in benchmark mode - produces no shares
+--bitmain-fan-ctrl
+Enable bitmain miner fan controlling
+--bitmain-fan-pwm
+Set bitmain fan pwm percentage 0~100
+--bitmain-freq
+Set frequency
+--bitmain-core-temp
+Select core temp
+--bitmain-voltage
+Set voltage
+--compact
+Use compact display without per device statistics
+--debug|-D
+Enable debug output
+--disable-rejecting
+Automatically disable pools that continually reject shares
+--expiry|-E
+Upper bound on how many seconds after getting work we consider a share from it stale
+--failover-only
+Don't leak work to backup pools when primary pool is lagging
+--fix-protocol
+Do not redirect to a different getwork protocol (eg. stratum)
+--hotplug
+--load-balance
+Change multipool strategy from failover to quota based balance
+--log|-l
+Interval in seconds between log output
+--lowmem
+Minimise caching of shares for low memory applications
+--monitor|-m
+Use custom pipe cmd for output messages
+--net-delay
+Impose small delays in networking to not overload slow routers
+--no-pool-disable
+--no-submit-stale
+Don't submit shares if they are detected as stale
+--pass|-p
+Password for bitcoin JSON-RPC server
+--per-device-stats
+Force verbose mode and output per-device statistics
+--pools
+--protocol-dump|-P
+Verbose dump of protocol-level activities
+--queue|-Q
+Maximum number of work items to have queued
+--quiet|-q
+Disable logging output, display status and errors
+--quota|-U
+quota;URL combination for server with load-balance strategy quotas
+--real-quiet
+Disable all output
+--retries
+--retry-pause
+--rotate
+Change multipool strategy from failover to regularly rotate at N minutes
+--round-robin
+Change multipool strategy from failover to round robin on failure
+--scan-time|-s
+Upper bound on time spent scanning current work, in seconds
+--sched-start
+Set a time of day in HH:MM to start mining (a once off without a stop time)
+--sched-stop
+Set a time of day in HH:MM to stop mining (will quit without a start time)
+--sharelog
+Append share log to file
+--scrypt
+Use the scrypt algorithm for mining (litecoin only)
+--shares
+Quit after mining N shares (default: unlimited)
+--socks-proxy
+Set socks4 proxy (host:port)
+--suggest-diff
+Suggest miner difficulty for pool to user (default: none)
+--multi-version
+Multi version
+--syslog
+Use system log for output messages (default: standard error)
+--text-only|-T
+Disable ncurses formatted screen output
+--url|-o
+URL for bitcoin JSON-RPC server
+--user|-u
+Username for bitcoin JSON-RPC server
+--userpass|-O
+Username:Password pair for bitcoin JSON-RPC server
+--verbose
+Log verbose output to stderr as well as status output
+--widescreen
+Use extra wide display without toggling
+--worktime
+Display extra work time debug information
+--config|-c
+Load a JSON-format configuration file
+See example.conf for an example configuration.
+--default-config
+Specify the filename of the default config file
+Loaded at start and used when saving without a name.
+--help|-h
+Print this message
+--version|-V
+Display version and exit
+Version
+MerkleRoot
+PrevHash
+DifficultyBits
+tq_freezethaw
+clear_sock
+0123456789abcdefbin2hex
+parse_notify
+tq_push
+tq_pop
+get_proxy
+suspend_stratum
+recalloc_sock
+stratum_send
+setup_stratum_socket
+initiate_stratum
+parse_extranonce
+parse_diff
+parse_reconnect
+realloc_strcat
+str_text
+thr_info_create
+completion_thread
+cg_completion_timeout
+CONNECT %s:%s HTTP/1.0
+CONNECT %s:%s HTTP/1.1
+Host: %s:%s
+Sending proxy %s:%s - %s
+Couldn't read from proxy %s:%s after sending CONNECT
+Received from proxy %s:%s - %s
+HTTP/1.1 200
+HTTP/1.0 200
+HTTP Error from proxy %s:%s - %s
+Couldn't read HTTP byte from proxy %s:%s
+Success negotiating with %s:%s HTTP proxy
+CGMINER
+Invalid IP address specified for socks4 proxy: %s
+Bad response from %s:%s SOCKS4 server
+Null string passed to valid_hex from in %s %s():%d
+util.c
+Invalid char 0x%x passed to valid_hex from in %s %s():%d
+http:
+Failed to calloc in %s %s():%d
+hex2bin str truncated
+hex2bin scan failed
+Null string passed to valid_ascii from in %s %s():%d
+Zero length string passed to valid_ascii from in %s %s():%d
+Invalid char 0x%x passed to valid_ascii from in %s %s():%d
+Failed to malloc pool swork merkle_bin
+merkle %d: %s
+Failed to convert merkle to merkle_bin in parse_notify
+%s%s%s%s%s%s%s
+0000000000000000000000000000000000000000000000000000000000000000
+Failed to convert header to header_bin in parse_notify
+Failed to convert cb1 to cb1_bin in parse_notify
+Failed to convert cb2 to cb2_bin in parse_notify
+Failed to calloc pool coinbase in parse_notify
+Pool %d coinbase %s
+job_id: %s
+prev_hash: %s
+coinbase1: %s
+coinbase2: %s
+bbversion: %s
+nbit: %s
+ntime: %s
+clean: %s
+Failed to malloc ret in ser_string
+YES (hash <= target)
+no (false positive; hash > target)
+ Proof: %s
+Target: %s
+TrgVal? %s
+#xnsub
+Pool %d extranonce subscribing enabled.
+%.*s
+Failed to malloc rpc_proxy in %s %s():%d
+Failed to realloc in %s %s():%d
+Closing socket for stratum pool %d
+Timed out waiting for data on socket_full
+Socket closed waiting in recv_line
+Failed to recv sock in recv_line
+Failed to realloc pool sockbuf in %s %s():%d
+Failed to parse a \n terminated string in recv_line
+RECVD: %s
+SEND: %s
+Write select failed on pool %d sock
+Failed to send in stratum_send
+Stratum send failed due to no pool stratum_active
+{"id": %d, "method": "mining.extranonce.subscribe", "params": []}
+Send extranonce.subscribe for stratum pool %d
+Failed to resolve (?wrong URL) %s:%s
+Failed to getaddrinfo for %s:%s
+Failed socket
+Failed sock connect
+Succeeded delayed connect
+Select timeout/failed connect
+Succeeded immediate connect
+Failed to connect to stratum on %s:%s
+Attempting to negotiate with %s:%s SOCKS5 proxy
+Bad response from %s:%s SOCKS5 server
+Success negotiating with %s:%s SOCKS5 proxy
+Unsupported proxy type for %s:%s
+Failed to calloc pool sockbuf in %s %s():%d
+{"id": %d, "method": "mining.subscribe", "params": []}
+{"id": %d, "method": "mining.subscribe", "params": ["cgminer/4.9.0", "%s"]}
+{"id": %d, "method": "mining.subscribe", "params": ["cgminer/4.9.0"]}
+Failed to send s in initiate_stratum
+Timed out waiting for response in initiate_stratum
+JSON-RPC decode failed: %s
+mining.notify
+Failed to get sessionid in initiate_stratum
+Failed to get valid nonce1 in initiate_stratum
+Failed to get valid n2size in initiate_stratum
+Failed to calloc pool->nonce1bin in %s %s():%d
+Pool %d stratum session id: %s
+Pool %d confirmed mining.subscribe with extranonce1 %s extran2size %d
+Failed to resume stratum, trying afresh
+Initiate stratum failed
+method
+params
+JSON-RPC method decode failed: %s
+mining.set_extranonce
+Failed to get valid nonce1 in parse_extranonce
+Failed to get valid n2size in parse_extranonce
+Pool %d confirmed mining.extranonce.subscribe with extranonce1 %s extran2size %d
+mining.set_difficulty
+Pool %d difficulty changed to %d
+Pool %d difficulty changed to %.1f
+Pool %d difficulty set to %f
+client.reconnect
+Denied stratum reconnect request for pool without domain '%s'
+Denied stratum reconnect request to url without domain '%s'
+Denied stratum reconnect request to non-matching domain url '%s'
+Stratum reconnect requested from pool %d to %s
+client.get_version
+{"id": %d, "result": "cgminer/4.9.0", "error": null}
+client.show_message
+Pool %d message: %s
+mining.ping
+Pool %d ping
+{"id": %d, "result": "pong", "error": null}
+{"id": %d, "method": "mining.authorize", "params": ["%s", "%s"]}
+pool %d JSON stratum auth failed: %s
+Stratum authorisation success for pool %d
+{"id": %d, "method": "mining.suggest_difficulty", "params": [%d]}
+{"id": %d, "method": "mining.multi_version", "params": [%d]}
+Failed to malloc in %s %s():%d
+%s%s
+Failed to malloc null in %s %s():%d
+(null)
+Failed to malloc txt in %s %s():%d
+cg@%s
+Failed to sem_init ret=%d errno=%d in %s %s():%d
+Failed to sem_post errno=%d cgsem=0x%p in %s %s():%d
+Failed to sem_wait errno=%d cgsem=0x%p in %s %s():%d
+Failed to sem_timedwait errno=%d cgsem=0x%p in %s %s():%d
+ERR: Asked to memcpy %u bytes from %s %s():%d
+screen
+work %s nonce %s
+midstate %s data %s nonce %s hash %s
+work diff %lld diffnum %d
+%s %08x work %s midstate %s data %s nonce %s hash %s diff %lld
+http0:
+socks4:
+socks5:
+socks4a:
+socks5h:
+escape_string
+add_item_buf
+restart_thread
+quit_thread
+tidyup
+print_data
+switchpool
+minecoin
+summary
+Failed to malloc escape buf %d in %s %s():%d
+api.c
+OOM buf siz=%d tot=%d ext=%d in %s %s():%d
+CMD=
+{"STATUS":"RESTART"
+RESTART
+{"STATUS":"BYE"
+::ffff:%s
+127.0.0.1
+,"id":1}
+API: send reply: (%d) '%.10s%s'
+API: send select failed (%d)
+API: send (%d:%d) failed: %s
+API: sent all of %d first go
+API: sent %d of %d first go
+API: sent all of remaining %d (sendc=%d)
+API: sent %d of remaining %d (sendc=%d)
+Accepted
+Ignored
+Invalid API Multicast Address
+API mcast could not open socket
+API mcast setsockopt SO_REUSEADDR failed (%s)%s
+ - API multicast listener will not be available
+API mcast bind to port %d failed (%s)%s
+API mcast join failed (%s)%s
+Failed to malloc mcast expect_code
+%s%s-
+API mcast failed count=%d (%s) (%d)
+API mcast from %s - %s
+API mcast request rep=%d (%s) from [%s]:%s
+API mcast request ignored - invalid port (%s)
+API mcast request OK port %s=%d
+Invalid client address %s
+API mcast could not open socket to client %s
+cgm-FTW-%d-%s
+API mcast send reply failed (%s) (%d)
+API mcast send reply (%s) succeeded (%d) (%d)
+API mcast request was no good
+cgminer-
+APIMcast
+API: unknown1 data type %d ignored
+Unknown
+Failed to malloc pooldetails buf
+API: restarting cgminer
+API: killing cgminer
+true
+%llu
+%.0f
+%.2f
+%.3f
+%.4f
+%.15f
+%.8f
+%ld.%06ld
+API: unknown2 data type %d ignored
+{"STATUS":[
+STATUS
+When
+Code
+Description
+,"ASCS":[
+ASCS,
+BestShare
+bestshare
+scantime
+expiry
+,"DEBUG":[
+Silent
+Quiet
+Verbose
+Debug
+RPCProto
+PerDevice
+WorkTime
+DEBUG,
+,"CHECK":[
+CHECK,
+|%s|
+Exists
+Access
+,"DEVDETAILS":[
+DEVDETAILS
+Name
+Driver
+Kernel
+Model
+Device Path
+,"PGAS":[
+PGAS,
+,"CONFIG":[
+CONFIG,
+ASC Count
+PGA Count
+Pool Count
+Strategy
+Log Interval
+Device Code
+Linux
+Failover-Only
+ScanTime
+Queue
+Expiry
+Hotplug
+None
+,"VERSION":[
+CGMiner
+Miner
+CompileTime
+Type
+VERSION,
+,"POOLS":[
+GHS5s
+GHSavg
+user
+STATS
+Elapsed
+Calls
+Wait
+GHS 5s
+GHS av
+,"STATS":[
+%s%d
+,"COIN":[
+COIN,
+Hash Method
+sha256
+Current Block Time
+Current Block Hash
+Network Difficulty
+,"SUMMARY":[
+SUMMARY,
+Found Blocks
+Getworks
+%8.4f
+Rejected
+Hardware Errors
+Utility
+Discarded
+Stale
+Get Failures
+Local Work
+Remote Failures
+Network Blocks
+Total MH
+Work Utility
+Difficulty Accepted
+Difficulty Rejected
+Difficulty Stale
+Best Share
+Device Hardware%
+Device Rejected%
+Pool Rejected%
+Pool Stale%
+Last getwork
+Disabled
+Rejecting
+%d:%02d:%02d
+POOL
+Status
+Priority
+Quota
+Long Poll
+User
+Last Share Time
+Diff
+Diff1 Shares
+Proxy Type
+Proxy
+Last Share Difficulty
+Has Stratum
+Stratum Active
+Stratum URL
+Has GBT
+Unknown reason - code bug
+NOTIFY
+Last Well
+Last Not Well
+Reason Not Well
+*Thread Fail Init
+*Thread Zero Hash
+*Thread Fail Queue
+*Dev Sick Idle 60s
+*Dev Dead Idle 600s
+*Dev Nostart
+*Dev Over Heat
+*Dev Thermal Cutoff
+*Dev Comms Error
+*Dev Throttle
+,"NOTIFY":[
+Failed to calloc mcast thr
+API mcast thread create failed
+QUIT
+UNKNOWN!
+API not running%s
+ - API will not be available
+Failed to malloc ipgroups buf
+API invalid group name '%s'
+API invalid group name '%c'
+API group name can't be '%c'
+API duplicate group name '%c'
+Failed to malloc group commands buf
+Failed to malloc noprivgroup commands buf
+Failed to malloc ipaccess buf
+Failed to calloc ipaccess
+API not running (no valid IPs specified)%s
+API failed to resolve %s
+API initialisation failed (%s)%s
+API setsockopt SO_REUSEADDR failed (ignored): %s
+API bind to port %d failed - trying again in 30sec
+API bind to port %d failed (%s)%s
+API3 initialisation failed (%s)%s
+API running in IP access mode on port %d (%d)
+API running in UNRESTRICTED read access mode on port %d (%d)
+API running in local read access mode on port %d (%d)
+StrBufs
+API failed (%s)%s (%d)
+API: connection from %s - %s
+API: recv failed: %s
+API: recv command: (%d) '%s'
+OOM cmdsbuf in %s %s():%d
+API: access denied to '%s' for '%s' command
+API: terminating due to: %s
+API failed to initiate a restart - aborting
+API failed to initiate a clean quit - aborting
+API unknown command '%s' in group '%c'
+devs
+edevs
+pools
+pgacount
+switchpool
+addpool
+poolpriority
+poolquota
+enablepool
+disablepool
+removepool
+save
+quit
+privileged
+devdetails
+estats
+check
+failover-only
+debug
+setconfig
+usbstats
+zero
+hotplug
+asccount
+lockstats
+%d Pool(s)
+No pools
+Summary
+Invalid command
+Missing device id parameter
+PGA count
+ASC count
+CGMiner versions
+Invalid JSON
+Missing JSON '%s'
+Missing pool id parameter
+Invalid pool id %d - range is 0 - %d
+Switching to pool %d:'%s'
+CGMiner config
+Missing save filename parameter
+Can't open or create save file '%s'
+Configuration saved to file '%s'
+Access denied to '%s' command
+Privileged access OK
+Enabling pool %d:'%s'
+Changed pool priorities
+Duplicate pool specified %d
+Disabling pool %d:'%s'
+Pool %d:'%s' already enabled
+Pool %d:'%s' already disabled
+Cannot disable last active pool %d:'%s'
+Missing addpool details
+Invalid addpool details '%s'
+Reached maximum number of pools (%d)
+Added pool %d: '%s'
+Cannot remove last pool %d:'%s'
+Cannot remove active pool %d:'%s'
+Removed pool %d:'%s'
+Notify
+Device Details
+CGMiner stats
+Missing check cmd
+Check command
+Missing parameter: true/false
+Invalid parameter should be true or false
+Failover-Only set to %s
+CGMiner coin
+Debug settings
+Set config '%s' to %d
+Unknown config '%s'
+Invalid number (%d) for '%s' range is 0-9999
+Invalid negative number (%d) for '%s'
+Set pool '%s' to quota %d'
+Missing config parameters 'name,N'
+Missing config value N for '%s,N'
+USB Statistics
+No USB Statistics
+Missing zero parameters
+Invalid zero parameter '%s'
+Zeroed %s stats with summary
+Zeroed %s stats without summary
+Invalid value for hotplug (%s) must be 0..9999
+Hotplug check set to %ds
+Hotplug disabled
+Hotplug is not available
+Missing hotplug parameter
+Lock stats created
+Lock stats not enabled
+Thread failed to init
+Thread got zero hashes
+Thread failed to queue work
+Device idle for 60s
+Device dead - idle for 600s
+Device failed to start
+Device over heated
+Device reached thermal cutoff
+Device comms error
+my_log_curses
+ [%d-%02d-%02d %02d:%02d:%02d] 
+logging.c
+                    
+k_alloc_items
+k_new_store
+_k_new_list
+_k_unlink_tail
+_k_add_head
+_k_add_tail
+_k_insert_before
+_k_insert_after
+_k_unlink_item
+_k_list_transfer_to_head
+_k_list_transfer_to_tail
+_k_free_list
+_k_free_store
+List %s store can't %s() - from %s %s() line %d in %s %s():%d
+klist.c
+List %s item_memory failed to realloc count=%d in %s %s():%d
+List %s failed to calloc %d new items - total was %d, limit was %d in %s %s():%d
+List %s data_memory failed to realloc count=%d in %s %s():%d
+List %s failed to calloc item data in %s %s():%d
+Failed to calloc store for %s in %s %s():%d
+Invalid new list %s with allocate %d must be > 0 in %s %s():%d
+Invalid new list %s with limit %d must be >= 0 in %s %s():%d
+Failed to calloc list %s in %s %s():%d
+Failed to calloc lock for list %s in %s %s():%d
+List %s can't %s() - do_tail is false - from %s %s() line %d in %s %s():%d
+List %s can't %s() a %s item - from %s %s() line %d in %s %s():%d
+%s() (%s) can't before a null item - from %s %s() line %d in %s %s():%d
+%s() (%s) can't after a null item - from %s %s() line %d in %s %s():%d
+List %s can't %s() to a %s list - from %s %s() line %d in %s %s():%d
+List %s can't %s() a store - from %s %s() line %d in %s %s():%d
+Store %s can't %s() the list - from %s %s() line %d in %s %s():%d
+dupalloc
+isdupnonce
+Failed to calloc dupdata in %s %s():%d
+noncedup.c
+Nonces
+%s%d: Duplicate nonce %08x
+get_plldata
+bitmain_DASH_detect
+bitmain_DASH_detect
+reset_all_hash_board
+check_fan_thr
+bitmain_DASH_prepare
+bitmain_scanhash
+bitmain_scanhash
+B c0
+s2R"
+b$C4 
+S6r&
+<`A
+>2.Q
+P%@Fpg`
+RwbVr
+ftGd$T
+Wfvv
+F4VL
+DXeH
+uJTZ7j
+ld\EL
+n6~UNt^
+set_PIC16F1704_flash_pointer_new
+send_data_to_PIC16F1704_new
+read_PIC16F1704_flash_pointer_new
+read_PIC16F1704_flash_data_new
+erase_PIC16F1704_flash_new
+write_data_into_PIC16F1704_flash_new
+jump_from_loader_to_app_PIC16F1704_new
+reset_PIC16F1704_pic_new
+set_PIC16F1704_voltage_new
+write_hash_ID_PIC16F1704_new
+read_hash_id_PIC16F1704_new
+enable_PIC16F1704_dc_dc_new
+disable_PIC16F1704_dc_dc_new
+heart_beat_PIC16F1704_new
+pic_heart_beat_func_new
+get_PIC16F1704_software_version_new
+get_PIC16F1704_voltage_new
+write_temperature_offset_PIC16F1704_new
+read_temperature_offset_PIC16F1704_new
+erase_PIC16F1704_app_flash_new
+PIC1704_update_pic_app_program_new
+every_chain_reset_PIC16F1704_pic_new
+every_chain_jump_from_loader_to_app_PIC16F1704_new
+every_chain_disable_PIC16F1704_dc_dc_new
+every_chain_enable_PIC16F1704_dc_dc_new
+send_heart_beat_to_every_chain
+check_whether_need_update_pic_program
+save_freq_PIC16F1704_new
+get_PIC16F1704_freq_new
+every_chain_get_PIC16F1704_freq_new
+calculate_address_interval
+tty_init_chain
+tty_init
+set_ticket_mask
+set_frequency
+open_core_chain
+check_asic_reg
+check_every_chain_asic_number
+software_set_address_chain
+DASH_read
+check_fan_speed
+check_chain
+set_PWM_according_to_temperature
+check_miner_status
+enable_read_temperature_from_asic_chain
+select_core_to_check_temperature_chain
+select_core_to_check_temperature
+read_temp_func
+set_temperature_offset_value_chain_sensor
+calibration_sensor_offset_chain
+set_temperature_offset_value_chain
+reset_hash_board
+check_sensor_ID
+calculate_hash_rate
+bitmain_DASH_reinit
+recheck_asic_num
+get_asic_response
+create_bitmain_check_fan_pthread
+create_bitmain_check_miner_status_pthread
+create_bitmain_get_hash_rate_pthread
+bitmain_scanreg
+creat_bitmain_scanreg_pthread
+create_bitmain_read_temp_pthread
+bitmain_DASH_init
+Updated Work!
+error freq,set default freq(200M) instead
+%s: vil_data = 0x%08x
+miner_count
+fan_num
+fan%d
+temp_num
+temp%d
+temp2_%d
+temp_max
+no_matching_work
+chain_acn%d
+chain_acs%d
+chain_hw%d
+chain_rate%d
+/etc/init.d/cgminer.sh restart > /dev/null 2>&1 &
+cgpu
+driver-btm-DASH.c
+Failed to calloc cgpu_info data
+add_cgpu(cgpu)
+%s detect new device
+echo 0 > /sys/class/gpio/gpio%d/value
+echo 1 > /sys/class/gpio/gpio%d/value
+/proc/interrupts
+%s: open /proc/interrupt error
+256:
+gpiolib
+find fan1.
+254:
+find fan2.
+%s: get nonce: 0x%08x, diff: 0x%02x, wc: 0x%02x, crc_received: 0x%02x, crc_checked: 0x%02x,chainid: 0x%02x
+%s: work_nonce = 0x%08x
+got a hw from Chain%d Asic%d
+%s: Chain_ID [%d] Error!
+%s: chain %d which_asic_nonce %d 
+ChainID Cause Error! ChainID:[%d] %d
+Which Nonce Cause Err![%d]
+%s %d: work %02x not find error
+%s: hashes %llu...
+%s failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x
+%s ok
+%s failed! read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_back_data[4] = 0x%x, read_back_data[5] = 0x%x
+%s failed!!! read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_back_data[4] = 0x%x, read_back_data[5] = 0x%x
+%s ok! flash_addr_h = 0x%02x, flash_addr_l = 0x%02x
+%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, 
+read_back_data[4] = 0x%x, read_back_data[5] = 0x%x, read_back_data[6] = 0x%x, read_back_data[7] = 0x%x, 
+read_back_data[8] = 0x%x, read_back_data[9] = 0x%x, read_back_data[10] = 0x%x, read_back_data[11] = 0x%x, 
+read_back_data[12] = 0x%x, read_back_data[13] = 0x%x, read_back_data[14] = 0x%x, read_back_data[15] = 0x%x, 
+read_back_data[16] = 0x%x, read_back_data[17] = 0x%x, read_back_data[18] = 0x%x, read_back_data[19] = 0x%x
+%s failed!
+%s failed! crc = 0x%04x
+%s ok
+%s failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x
+%s ok, voltage = 0x%02x
+%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x,
+read_back_data[4] = 0x%x, read_back_data[5] = 0x%x, read_back_data[6] = 0x%x, read_back_data[7] = 0x%x,
+read_back_data[8] = 0x%x, read_back_data[9] = 0x%x, read_back_data[10] = 0x%x, read_back_data[11] = 0x%x,
+read_back_data[12] = 0x%x, read_back_data[13] = 0x%x, read_back_data[14] = 0x%x, read_back_data[15] = 0x%x
+%s failed!
+%s failed! crc = 0x%04x
+ %d ioctl error in %s
+%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_back_data[4] = 0x%x
+%s ok, version = 0x%02x
+%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_back_data[4] = 0x%x
+%s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, 
+read_back_data[4] = 0x%x, read_back_data[5] = 0x%x, read_back_data[6] = 0x%x, read_back_data[7] = 0x%x, 
+read_back_data[8] = 0x%x, read_back_data[9] = 0x%x, read_back_data[10] = 0x%x, read_back_data[11] = 0x%x
+%s: erase_loop = %d
+/sbin/pic.txt
+%s: open pic16f1704_app_new.txt failed
+%s: pic_flash_length = %d
+%s: reset pic error!
+%s: erase flash error!
+%s: set flash pointer error!
+send pic program time: %d
+buf[%d] = 0x%02x
+ioctl error @ line %d
+%s: create thread error for pic_heart_beat_func
+%s: Chain%d pic update for %d times
+--- %s failed! read_back_data[0] = 0x%02x, read_back_data[1] = 0x%02x
+--- %s ok
+--- %s: read_back_data[0] = 0x%x, read_back_data[1] = 0x%x, read_back_data[2] = 0x%x, read_back_data[3] = 0x%x, read_back_data[4] = 0x%x, read_back_data[5] = 0x%x
+--- %s failed!
+--- %s failed! crc = 0x%04x
+--- %s ok, freq = %d
+set voltage = %.6f  real:%u mv
+Chain %u voltage %u
+%s %u
+set freq:
+i = %d
+offset[%d] ERR
+actual_asic_number = %d, but it is error
+%s: temp_asic_number = %d, set addrInterval = '%d'
+%s: temp_asic_number = %d, addrInterval = %d
+%s: CHIP_OFFSET = 0x%08x, CORE_OFFSET = 0x%08x
+/dev/ttyO%d
+Unrecognized baud rate: %d,set default baud
+write error!!
+Start To Fill Work!
+Start To Fill Work!ChainIndex:[%d]
+Work Error![%d]
+new_block[chainid] = %d
+ChainIndex:[%d], workid = %d
+ChainID[%d] Wirte Work. workid=%d
+%s: the baud is not recommand value, so use 115200 baud
+%s chainid = %d
+create rx read thread for chain %d failed
+create rx read thread for chain %d ok
+create tx read thread for chain %d failed
+create tx read thread for chain %d ok
+open device over
+%s ticket_mask = 0x%08x
+%s: frequency = %d
+!!! %s: the input register is not correct, please check it. the input register is 0x%02x
+%s: not receive CHIP_ADDR register value for %d time
+%s: Chain%d has %d ASICs
+!!! %s: the input register is not correct, please check it. the input register is 0x%02x
+%s: chain %d has %d ASIC, and addrInterval is %d
+Now Set [%d] Chain Address
+%s: fd = %d
+%s: ioctl error
+/dev/i2c-0
+set i2c slave addr error
+i2c init ok
+echo %d > /sys/class/gpio/gpio%d/value
+open /proc/interrupts error
+test_loop = %d
+find fan1
+fan1Speed = %d
+find fan2
+fan2Speed = %d
+%s OK
+FAN1 too slow ...
+FAN2 too slow ...
+echo %u > /sys/class/pwm/pwm1/duty_ns
+/sys/class/gpio/gpio%d/value
+%s :open %s failed
+%s :lseek %s failed
+detected at %s  chain %d
+detect total chain num %d
+No Hash Board
+%s: Set PWM percent : %d
+%s: chain %d asic %d asic_nonce_num %d
+%s: avg_num %d asic_num %d
+asic num err![%d]
+chain %d reinit %0.2f
+%s: the temperature is too high, close PIC and need reboot!!!
+Temperature is higher than 85'C for %d time
+%s: We have lost internet for %d seconds, so don't send work to hashboard anymore
+Fan Err! Disable PIC! Fan num is %d
+Fan Err! Disable PIC! Fan1 speed is too low %d pwm %d 
+Fan Err! Disable PIC! Fan2 speed is too low %d pwm %d 
+Fan Err! Disable PIC! Fan1:%d Fan2:%d pwm %d
+%s: reg_value = 0x%08x
+%s: diode_mux_sel = %d, vdd_mux_sel = %d
+%s: Chain%d sensor%d local temp is %d `C, higher than MAX_TEMP
+%s: can't read all sensor's temperature, close PIC and need reboot!!!
+Chain %d %s
+%s: Chain%d Sensor%d temp offset value set error. It should be %02d, but read back is %02d
+%s: Chain%d Sensor%d temp offset : %02d, 
+%d %s
+chain:%d local:%d remote:%d
+%s: which_chain = %d
+%s: Chain%d Sensor%d Manufacturer ID = 0x%02x
+%*.*f
+%s: Chain%d ASIC%d didn't send back HASH_RATE register value
+%s: RT g_HASH_RATE_reg_value[%d][%d] = 0x%08x
+%s: chain%d RT hash rate is %0.2fGHz/s
+%s: avg g_HASH_RATE_reg_value[%d][%d] = 0x%08x
+%s: chain%d avg hash rate is %0.2fGHz/s
+%s DONE!
+Start A New Asic Response.Chain Id:[%d]
+%s: %d Headers are not corret! Header0 = 0x%02x, Header1 = 0x%02x, Header2 = 0x%02x rp = %d
+%s: nonce fifo full!!!
+Will Clean!
+%s: reg fifo full!!!
+%s: create thread for check miner_status
+%s: create thread for get hashrate from asic failed
+reg fifo is full !!
+%s: reg_value = 0x%08x crc5 error,should be %02x,but check as %02x
+%s: the Chip%d PLL_PARAMETER reg_value = 0x%08x @chain%d
+%s: the Chip%d MISC_CONTROL reg_value = 0x%08x @chain%d
+%s: the Chip%d TICK_MASK reg_value = 0x%08x @chain%d
+%s: the Chip%d GENERAL_I2C_COMMAND reg_value = 0x%08x @chain%d
+%s: create thread error for bitmain_scanreg
+%s: create thread for read temp
+1.0.0.9
+%s: config_parameter.token_type != 0x%x, it is 0x%x
+%s: config_parameter.crc = 0x%x, but we calculate it as 0x%x
+%s: fan_eft : %d  fan_pwm : %d
+frequency = '%d'
+dev.timeout = %d us
+Bitmain_D1
+                                
+do_dump
+\u%04x
+\u%04x\u%04x
+null
+i == size
+dump.c
+`decode_unicode_escape
+stream_unget
+stream_get
+lex_unget_unsave
+lex_scan_string
+lex_scan_number
+%s near '%s'
+%s near end of file
+str[0] == 'u'
+load.c
+stream->buffer_pos > 0
+stream->buffer[stream->buffer_pos] == c
+count >= 2
+unable to decode byte 0x%x
+c == d
+premature end of input
+unexpected newline
+control character 0x%x
+invalid escape
+invalid Unicode '\u%04X\u%04X'
+invalid Unicode '\u%04X'
+\u0000 is not allowed
+too big negative integer
+too big integer
+end == saved_text + lex->saved_text.length
+real number overflow
+string or '}' expected
+duplicate object key
+':' expected
+'}' expected
+']' expected
+invalid token
+unexpected token
+'[' or '{' expected
+end of file expected
+<string>
+wrong arguments
+<buffer>
+<stdin>
+<stream>
+unable to open %s: %s
+<callback>
+jsonp_strtod
+end == strbuffer->value + strbuffer->length
+strconv.c
+%.17g
+'%s' is not a number
+'%s' is out of range
+'%s' is negative
+%.1f
+Option %s: unknown entry type %u
+Option %s: description cannot be NULL
+Option %s: does not begin with '-'
+Option %s: invalid long option '--'
+Option %s: invalid short option '%.*s'
+Option %s: does not take arguments '%s'
+Invalid argument '%s'
+parse_one
+POSIXLY_CORRECT
+*offset == 0
+opt/parse.c
+%s: %.*s: %s
+doesn't allow an argument
+requires an argument
+unrecognized option
+Usage: %s
+ <arg>
+                    
+ (default: %s)
+work %s nonce %s hash %s
+ pattern %s
+C:\MinGW\msys\1.0\home\Administrator\testdata\workdata%d.bin
+read failed on %s
+C:\MinGW\msys\1.0\home\Administrator\testdata\resulthash%d.bin
+test file workdata%d.bin resulthash%d.bin is OK!
+test file workdata%d.bin resulthash%d.bin is FAILED!
+pattern/golden/1/workdata%d.bin
+pattern/golden/1/resulthash%d.bin
+pattern/golden/1/target%d.bin
+This is golden nonce!
+This is NOT golden nonce!
+nMp_
+H5[-Q"cN
+1Ab~
+B5r
+*`NK
+Jw%G%
+aC%lym
+YaSj
+wD;>
+T`00P
+V++}
+L&&jl66Z~??A
+Oh44\Q
+sb11S*
+RF##e
+&N''i
+X,,t4
+v;;M
+R)){
+>^//q
+,@  `
+r99K
+f33U
+x<<D%
+p88H
+uB!!c 
+z==G
+D""fT**~;
+;d22Vt::N
+H$$l
+Cn77Y
+J%%o\..r8
+|>>Bq
+j55_
+P((x
+Z--w
+00P`
+++}V
+=&&jL66Zl??A~
+44\h
+11Sb
+##eF
+''iN
+,,tX
+-6nn
+;;Mv
+})){R
+//q^
+  `@
+g99KrJJ
+33Uf
+<<Dx
+!88Hp
+!!cB
+==Gzdd
++2ss
+""fD**~T
+22Vd::Nt
+$$lH\\
+77Ynmm
+%%oJ..r\
+!>KK
+>>B|
+55_jWW
+3"ii
+((xP
+)--wZ
+P`00
+gg}V++
+jL&&Zl66A~??
+\h44
+Sb11?*
+eF##^
+iN''
+tX,,.4
+RRMv;;a
+{R))>
+q^//
+`@  
+Kr99
+MMUf33
+PPDx<<
+Hp88
+cB!!0 
+5&
+DD9.
+~~Gz==
+]]+2
+fD""~T**
+Vd22Nt::
+lH$$
+Yn77
+xxoJ%%r\..$8
+tt!>
+ppB|>>
+aa_j55
+UUxP((z
+wZ--
+0P`0
+g+}V+
+&jL&6Zl6?A~?
+4\h4
+1Sb1
+#eF#
+'iN'
+,tX,
+R;Mv;
+){R)
+/q^/
+ `@ 
+9Kr9J
+M3Uf3
+P<Dx<
+8Hp8
+!cB!
+~=Gz=d
+"fD"*~T*
+2Vd2:Nt:
+$lH$\
+7Yn7m
+x%oJ%.r\.
+p>B|>
+a5_j5W
+U(xP(
+-wZ-
+_E`%
+\hQV
+Sb*kA?AT?*
+0Hx(x`(07
+$~Z6ZH6$
+tX4Fr.rh.46Aw-wl-6
+%Ku>
+cw/X
+cB pP0P@0 
+&y_5_L5&
+.eK9K\9.
+2O}+}d+2
+k(lD<DP<(
+r\8Tl$lp$8W_
+Ws!R
+>]c!c|!>
+B|q&W
+:Si'it':'
++"wU3UD3"
+-<Zf"fx"<
+m,bN:NX:,2
+__`%
+\hhV
+SbbkA?AT?**
+Hx(x`(00
+~Z6ZH6$$
+iNN3L
+tXXFr.rh.44Aw-wl-66
+%%u>
+cc/X
+cBBpP0P@0  
+y_5_L5&&
+eK9K\9..j
+Gzz'
+O}+}d+22B
+kklD<DP<((,
+Ntt6"
+GG8(
+r\\Tl$lp$88_
+WW!R
+]c!c|!>>
+B||&W
+Si'it'::
+++wU3UD3""
+--Zf"fx"<<
+xPP+
+wZZ-3
+mmbN:NX:,,
+9T``
+qbMM|1
+AAn/
+}g__C
+EE`%
+-[uu(]
+\QQV
+Msbb
+S**kA?AT?
+1RFF
+!^00Hx(x`(77
+$$~Z6ZH6
+t44Fr.rh.66Aw-wl-
+ua}}4I
+yy:C
+*OO{4
+KKu>
+ww/X
+EuBB
+c  pP0P@0
+&&y_5_L5
+..eK9K\9
+=WUUX
+22O}+}d+
+((lD<DP<
+anCCi*
+IIr;
+GGg 
+r88Tl$lp$WW_
+ss!R
+>>]c!c|!
+Bqq&W
+)X::Si'it'''
+""wU3UD3
+<<Zf"fx"
+{{=F
+mma
+,,bN:NX:
+9P``
+MM|1
+AAn/
+EE`%
+uu(]
+zjLL
+MSbb
+?**kA?AT
+1eFF
+!(00Hx(x`
+6$$~Z6ZH
+:tXX
+.44Fr.rh-66Aw-wl
+SMvv
+}}4I
+yy:C
+OO{4
+b/Uff
+[Dxx
+KKu>
+BHpp
+ww/X
+EcBB
+0  pP0P@
+<05&&y_5_L/
+9..eK9K\W
+2o+22O}+}d
+]fDD
+<((lD<DPy
+CCi*
+IIr;
+GGg 
+$88Tl$lp
+ss!R
+!>>]c!c|
+qq&W
+)'::Si'it
+V3""wU3UD
+Z"<<Zf"fx
+OxPP
+RwZZ
+{{=F
+mma
+:,,bN:NX
+MM|1
+AAn/
+EE`%
+uu(]
+T?**kA?A
+`(00Hx(xn
+H6$$~Z6Z6
+h.44Fr.rl-66Aw-w
+}}4I
+yy:C
+OO{4
+KKu>
+ww/X
+@0  pP0P
+<L5&&y_5_
+q/qg
+O\9..eK9K=W
+2d+22O}+}
+nP<((lD<DUy
+CCi*
+IIr;
+GGg 
+p$88Tl$l
+ss!R
+e#eY|
+|!>>]c!c7
+qq&W
+t'::Si'iN
+D3""wU3U
+x"<<Zf"f*
+{{=F
+mma
+aX:,,bN:N
+MM|1
+AAn/
+EE`%
+uu(]
+SAT?**kA?
+^x`(00Hx(
+ZH6$$~Z6
+trh.44Fr.wl-66Aw-
+}}4I
+yy:C
+OO{4
+KKu>
+ww/X
+cP@0  pP0.
+_L5&&y_5q
+q/8g
+K\9..eK9
+}d+22O}+
+DP<((lD<
+CCi*
+IIr;
+GGg 
+rlp$88Tl$
+ss!R
+c|!>>]c!|7
+qq&W
+Xit'::Si'
+UD3""wU3
+fx"<<Zf"
+{{=F
+mma
+NX:,,bN:
+MM|1
+AAn/g
+EE`%
+uu(]
+?AT?**kA
+(x`(00Hx
+6ZH6$$~Z
+.rh.44Fr-wl-66Aw
+}}4I{
+yy:C
+OO{4
+KKu>
+ww/Xu
+0P@0  pP
+$<5_L5&&y_/q
+O9K\9..eKW
+2+}d+22O}
+n<DP<((lDy
+CCi*
+IIr;
+GGg 
+$lp$88Tl
+ss!RQ
+!c|!>>]c
+qq&W
+'it'::Si
+3UD3""wU
+"fx"<<Zf
+{{=F
+mma:NX:,,bN
+__C%
+uu($
+QQV\4\
+A?AT?**k
+x(x`(00H
+Z6ZH6$$~
+r.rh.44Fw-wl-66A
+yy:,
+OO{:
+]]D[
+P0P@0  p.
+$_5_L5&&yq/q
+K9K\9..e
+}+}d+22O
+D<DP<((l
+7M;M
+tV2V
+GGg(
+l$lp$88T
+WW_R
+de#e
+Wc!c|!>>]|
+qi'it'::S
+U3UD3""w
+f"fx"<<Z
+mmN:NX:,,br
+E~Dl
+0/*g
+)5CN
+@T z
+p_i7
+$1J^
+5;6Q
+kgyA
+I+I
+L#'Q&
+k<VL
+XX&~
+0t*Q
+N^ee
+1p.D
+0xGNe
+Mf3L
+2_{6n
+)l\^'-
+<$;nq
+TZFx
+E=zpb
+@=_h
+%.U4
+zJv8
+K j
+;4=N
+ouD2
+-oI&`xR
+T`00P
+V++}
+L&&jl66Z~??A
+Oh44\Q
+sb11S*
+RF##e
+&N''i
+X,,t4
+v;;M
+R)){
+>^//q
+,@  `
+r99K
+f33U
+x<<D%
+p88H
+uB!!c 
+z==G
+D""fT**~;
+;d22Vt::N
+H$$l
+Cn77Y
+J%%o\..r8
+|>>Bq
+j55_
+P((x
+Z--w
+00P`
+++}V
+=&&jL66Zl??A~
+44\h
+11Sb
+##eF
+''iN
+,,tX
+-6nn
+;;Mv
+})){R
+//q^
+  `@
+g99KrJJ
+33Uf
+<<Dx
+!88Hp
+!!cB
+==Gzdd
++2ss
+""fD**~T
+22Vd::Nt
+$$lH\\
+77Ynmm
+%%oJ..r\
+!>KK
+>>B|
+55_jWW
+3"ii
+((xP
+)--wZ
+P`00
+gg}V++
+jL&&Zl66A~??
+\h44
+Sb11?*
+eF##^
+iN''
+tX,,.4
+RRMv;;a
+{R))>
+q^//
+`@  
+Kr99
+MMUf33
+PPDx<<
+Hp88
+cB!!0 
+5&
+DD9.
+~~Gz==
+]]+2
+fD""~T**
+Vd22Nt::
+lH$$
+Yn77
+xxoJ%%r\..$8
+tt!>
+ppB|>>
+aa_j55
+UUxP((z
+wZ--
+0P`0
+g+}V+
+&jL&6Zl6?A~?
+4\h4
+1Sb1
+#eF#
+'iN'
+,tX,
+R;Mv;
+){R)
+/q^/
+ `@ 
+9Kr9J
+M3Uf3
+P<Dx<
+8Hp8
+!cB!
+~=Gz=d
+"fD"*~T*
+2Vd2:Nt:
+$lH$\
+7Yn7m
+x%oJ%.r\.
+p>B|>
+a5_j5W
+U(xP(
+-wZ-
+XK`(p
++}`n"|
+?{H">6
+-Pxq5
+nX33
+}Ut]
+$o,
+vRQ>
+8STs
+LwH'
+aeabi
+cgminer
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.text
+.fini
+.rodata
+.ARM.exidx
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.data
+.bss
+.ARM.attributes
+.gnu_debuglink

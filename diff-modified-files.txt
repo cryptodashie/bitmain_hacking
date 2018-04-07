@@ -1,0 +1,93 @@
+1c1
+< MD5 (.//files.txt) = 5b551f11f011edff32ab4363463f32ae
+---
+> MD5 (.//files.txt) = cda83c9cf986b76214d84e03f50ac32a
+30c30
+< MD5 (.//usr/bin/compile_time) = 968f5dd00a30505296fe3d6daec3c238
+---
+> MD5 (.//usr/bin/compile_time) = e4f739f82d1763fe43ba97e62bb4a839
+43c43
+< MD5 (.//usr/bin/cgminer) = 287ed051cf824b71532f4828689f2f57
+---
+> MD5 (.//usr/bin/cgminer) = 29a782020faa453832d3e5ed26796e02
+132a133
+> MD5 (.//usr/lib/libcurl-gnutls.so.4) = f470903f983004cc005e45e4d48ebd4e
+136d136
+< MD5 (.//usr/lib/libcurl.so.5.3.0) = f470903f983004cc005e45e4d48ebd4e
+341c341
+< MD5 (.//etc/hosts) = 27acad957c7cded40cd6ac50d23ddc66
+---
+> MD5 (.//etc/hosts) = 4dbc5559952fca93a759c3f646bb6923
+836,838c836,838
+< MD5 (.//www/pages/index.html) = 0898ab1a57e3dcbd1be36e1e19157ad0
+< MD5 (.//www/pages/minerConfiguration.html) = 6c1883de2d8e8c85c86f36eeddace1d6
+< MD5 (.//www/pages/minerStatus.html) = 2fe9c484be886624fa818f15b5d3d5b9
+---
+> MD5 (.//www/pages/index.html) = cf9a92d9f5d071bc492d261af4f67188
+> MD5 (.//www/pages/minerConfiguration.html) = 518a14bc624abedc7f3f348d7af3dac3
+> MD5 (.//www/pages/minerStatus.html) = be4062e08188f3c0c18885f6e8f8f46b
+840d839
+< MD5 (.//www/pages/css/cascade.css) = 5f8a10212fbb3c52fde8c3d2287a115f
+841a841
+> MD5 (.//www/pages/css/cascade2.css) = 15b6d4d71e3c18d2b90c1a0b74fc2881
+846c846
+< MD5 (.//www/pages/images/antminer_logo.png) = 8ba22a6cbb3449f060ba96148378e12f
+---
+> MD5 (.//www/pages/images/antminer_logo2.png) = 91cc4eff48deaac6b41cd933750284a0
+850c850
+< MD5 (.//www/pages/network.html) = b795fd93ee53770a25a51516adb5867c
+---
+> MD5 (.//www/pages/network.html) = b8c13e4c7b420d63b4313fa3d532e6a1
+896,899c896,899
+< MD5 (.//www/pages/administration.html) = 70ef274ff5c42ec4a7064f356cff01e8
+< MD5 (.//www/pages/reboot.html) = 9a42f0fb9242959fe624127925191e60
+< MD5 (.//www/pages/networkDiagnostics.html) = 34dabfa02497fc7ee954a9ad3f8f4ec6
+< MD5 (.//www/pages/upgrade.html) = b738662764653e48e9e5b13d7334db52
+---
+> MD5 (.//www/pages/administration.html) = 50aeba2e97288898b0a62f84c304882a
+> MD5 (.//www/pages/reboot.html) = cf4bfa79b71e13d64ea2ec647d0337a8
+> MD5 (.//www/pages/networkDiagnostics.html) = 6302f42f4ca98cb039987199355a486b
+> MD5 (.//www/pages/upgrade.html) = 39b9a8084a7e815dcd13ee7581e6535d
+956c956
+< MD5 (.//www/pages/kernelLog.html) = 75b3dc51b8abfc39b408153d1b4292d6
+---
+> MD5 (.//www/pages/kernelLog.html) = 4b1f148e4245a74e2c46c388e44be30d
+959,961c959,962
+< MD5 (.//www/pages/cgi-bin/get_miner_conf.cgi) = c080d78cae58d85e662078a3993e9eba
+< MD5 (.//www/pages/cgi-bin/set_miner_conf.cgi) = 244b4516acf85aad894f2a7329912c49
+< MD5 (.//www/pages/cgi-bin/minerStatus.html) = 843a03493ebcf20d3b7c220aa4cf1e1c
+---
+> MD5 (.//www/pages/cgi-bin/get_miner_conf.cgi) = e3a69554d8d2a9c2007017d49b0b42f8
+> MD5 (.//www/pages/cgi-bin/set_miner_conf.cgi) = fe7b32cb4184b71c0e2f0b82cc9ebbf7
+> MD5 (.//www/pages/cgi-bin/kill_bmminer2.cgi) = d6836fef5e7ddb6fed219a073579f504
+> MD5 (.//www/pages/cgi-bin/minerStatus.html) = 740ef66aea51423f031cd1c73faaf04d
+963c964
+< MD5 (.//www/pages/cgi-bin/minerAdvanced.cgi) = 9a0959c9eb29505ac8ab7ff18f8a69d9
+---
+> MD5 (.//www/pages/cgi-bin/minerAdvanced.cgi) = b039d8255b8de83fdf17ed959d4e0e9d
+965c966
+< MD5 (.//www/pages/cgi-bin/upgrade.cgi) = 3e32a6cac2f68d0612d4bd1998fa0606
+---
+> MD5 (.//www/pages/cgi-bin/upgrade.cgi) = 85e53cfdc250b069f98b801051c7279a
+969c970
+< MD5 (.//www/pages/cgi-bin/upgrade_clear.cgi) = 1addf7f0cca57c30ac4c93919da7fd2d
+---
+> MD5 (.//www/pages/cgi-bin/upgrade_clear.cgi) = 8d947f29d161f018e6117d90b801bbc2
+975c976
+< MD5 (.//www/pages/cgi-bin/minerConfiguration.cgi) = 8782d0bc2946e8bfc5cad9088ede139d
+---
+> MD5 (.//www/pages/cgi-bin/minerConfiguration.cgi) = 1959b02046087330be97f76447a44d47
+977,978c978,979
+< MD5 (.//www/pages/cgi-bin/cgi_lib.cgi) = 952e40f11e2bfe68496b06ca09b1af5c
+< MD5 (.//www/pages/cgi-bin/create_conf_backup.cgi) = f97f10c7eb7048db2f3aa962f117caf4
+---
+> MD5 (.//www/pages/cgi-bin/cgi_lib.cgi) = fd6f0529cd3add279d0154d229a7544a
+> MD5 (.//www/pages/cgi-bin/create_conf_backup.cgi) = ac13ce65f601e642d797733e3e9a24c1
+981,983c982,984
+< MD5 (.//www/pages/cgi-bin/upload_conf.cgi) = 40b41b0abb94a62314c0397b9e619f50
+< MD5 (.//www/pages/monitor.html) = 9845777c98a0865da5a02b7f8395b954
+< MD5 (.//Angstrom-antminer_m-eglibc-ipk-v2013.06-beaglebone.rootfs.cpio) = 020e4141166a9542a66d26e31f0f3302
+---
+> MD5 (.//www/pages/cgi-bin/upload_conf.cgi) = 8a51b700d8da62eca35e5ff0d8f19405
+> MD5 (.//www/pages/monitor.html) = 1f375755107c2b0dad4135467f02380f
+> MD5 (.//Angstrom-antminer_m-eglibc-ipk-v2013.06-beaglebone.rootfs.cpio) = a3e4c0bbaca422cc9ad13c348bd03b26

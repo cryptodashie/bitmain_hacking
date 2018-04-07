@@ -1,0 +1,13 @@
+Package: led-blink
+Version: 1.0-r0.2
+Description: led-blink version 1.0-r0
+ Program to blink a led
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2
+Architecture: armv7ahf-vfp-neon
+OE: led-blink
+Homepage: unknown
+Depends: libc6 (>= 2.17)
+Source: file://led-blink.c file://COPYING

@@ -1,0 +1,13 @@
+Package: monitor-ipsig
+Version: 1.0-r0.3
+Description: monitor-ipsig version 1.0-r0
+ Daemon to monitor recovery button
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: CLOSED
+Architecture: armv7ahf-vfp-neon
+OE: monitor-ipsig
+Homepage: unknown
+Depends: libc6 (>= 2.17)
+Source: file://debug.h file://get_mac_ip.c file://get_mac_ip.h file://monitor-ipsig.c file://Makefile file://monitor-ipsig.sh

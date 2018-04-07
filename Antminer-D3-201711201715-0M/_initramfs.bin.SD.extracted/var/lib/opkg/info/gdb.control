@@ -1,0 +1,14 @@
+Package: gdb
+Version: 7.5.1-r0.0.1
+Description: gdb version 7.5.1-r0.0
+ gdb - GNU debugger
+Section: devel
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2 & GPLv3 & LGPLv2 & LGPLv3
+Architecture: armv7ahf-vfp-neon
+OE: gdb
+Homepage: http://www.gnu.org/software/gdb/
+Depends: libgcc1 (>= linaro-4.7), libtinfo5 (>= 5.9), libz1 (>= 1.2.7), libreadline6 (>= 6.2), libc6 (>= 2.17), libexpat1 (>= 2.1.0)
+Recommends: glibc-thread-db
+Source: ftp://ftp.gnu.org/gnu/gdb/gdb-7.5.1.tar.gz file://kill_arm_map_symbols.patch file://gdbserver-cflags-last.diff;striplevel=0 file://renesas-sh-native-support.patch

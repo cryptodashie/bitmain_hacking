@@ -1,0 +1,7 @@
+/usr/bin/ntpdate-sync
+/etc/network/if-up.d/ntpdate-sync
+/etc/network/if-up.d/
+/etc/network/
+/etc/default/ntpdate
+/lib/systemd/system/ntpdate.service
+/usr/bin/ntpdate

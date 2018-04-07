@@ -1,0 +1,14 @@
+Package: libwrap0
+Version: 7.6-r10.2
+Description: Security tool that is a wrapper for TCP daemons
+ Tools for monitoring and filtering incoming requests for tcp
+ services.
+Section: console/network
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: BSD
+Architecture: armv7ahf-vfp-neon
+OE: tcp-wrappers
+Homepage: unknown
+Depends: libc6 (>= 2.17)
+Source: ftp://ftp.porcupine.org/pub/security/tcp_wrappers_7.6.tar.gz file://00_man_quoting.diff file://01_man_portability.patch file://05_wildcard_matching.patch file://06_fix_gethostbyname.patch file://10_usagi-ipv6.patch file://11_tcpd_blacklist.patch file://11_usagi_fix.patch file://12_makefile_config.patch file://13_shlib_weaksym.patch file://14_cidr_support.patch file://15_match_clarify.patch file://expand_remote_port.patch file://have_strerror.patch file://man_fromhost.patch file://restore_sigalarm.patch file://rfc931.diff file://safe_finger.patch file://sig_fix.patch file://siglongjmp.patch file://socklen_t.patch file://tcpdchk_libwrapped.patch file://ldflags.patch file://rename_strings_variable.patch file://try-from.8 file://safe_finger.8

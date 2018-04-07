@@ -1,0 +1,18 @@
+if ! grep -q -s ntpdate $D/var/spool/cron/root; then
+        echo "adding crontab"
+        test -d $D/var/spool/cron || mkdir -p $D/var/spool/cron
+        echo "30 * * * *    /usr/bin/ntpdate-sync silent" >> $D/var/spool/cron/root
+    fi
+OPTS=""
+
+if [ -n "$D" ]; then
+    OPTS="--root=$D"
+fi
+
+if type systemctl >/dev/null 2>/dev/null; then
+	systemctl $OPTS enable ntpdate.service
+
+	if [ -z "$D" -a "enable" = "enable" ]; then
+		systemctl restart ntpdate.service
+	fi
+fi

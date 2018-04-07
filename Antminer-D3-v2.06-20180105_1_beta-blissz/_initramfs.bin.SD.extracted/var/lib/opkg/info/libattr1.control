@@ -1,0 +1,13 @@
+Package: libattr1
+Version: 2.4.46-r4.2
+Description: attr version 2.4.46-r4
+ utilities for manipulating filesystem extended attributes
+Section: libs
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: LGPLv2.1+
+Architecture: armv7ahf-vfp-neon
+OE: attr
+Homepage: http://savannah.nongnu.org/projects/attr/
+Depends: libc6 (>= 2.17)
+Source: http://download.savannah.gnu.org/releases/attr/attr-2.4.46.src.tar.gz file://generic-syscalls.patch file://relative-libdir.patch;striplevel=0

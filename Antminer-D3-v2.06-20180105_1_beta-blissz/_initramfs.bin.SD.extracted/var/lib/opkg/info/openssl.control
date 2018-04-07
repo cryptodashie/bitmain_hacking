@@ -1,0 +1,13 @@
+Package: openssl
+Version: 1.0.1e-r15.1.2
+Description: Secure Socket Layer
+ Secure Socket Layer (SSL) binary and related cryptographic tools.
+Section: libs/network
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: openssl
+Architecture: armv7ahf-vfp-neon
+OE: openssl
+Homepage: http://www.openssl.org/
+Depends: libssl1.0.0 (>= 1.0.1e), libc6 (>= 2.17), libcrypto1.0.0 (>= 1.0.1e)
+Source: http://www.openssl.org/source/openssl-1.0.1e.tar.gz file://configure-targets.patch file://shared-libs.patch file://oe-ldflags.patch file://engines-install-in-libdir-ssl.patch file://openssl-fix-link.patch file://debian/version-script.patch file://debian/pic.patch file://debian/c_rehash-compat.patch file://debian/ca.patch file://debian/make-targets.patch file://debian/no-rpath.patch file://debian/man-dir.patch file://debian/man-section.patch file://debian/no-symbolic.patch file://debian/debian-targets.patch file://openssl_fix_for_x32.patch file://openssl-fix-doc.patch file://fix-cipher-des-ede3-cfb1.patch file://0001-Add-bit-sliced-AES-for-ARM-NEON.-This-initial-versio.patch file://0002-bsaes-armv7.pl-change-preferred-contact.patch file://0003-bsaes-armv7.pl-optmize-Sbox-and-key-conversion.patch file://0004-bsaes-armv7.pl-minor-performance-squeeze-on-Snapdrag.patch file://0005-bsaes-armv7.pl-even-closer-shave.patch file://0006-bsaes-armv7.pl-closest-shave.-While-0.3-cpb-improvem.patch file://0007-bsaes-armv7.pl-take-it-into-build-loop.patch file://0008-bsaes-armv7.pl-add-bsaes_cbc_encrypt-and-bsaes_ctr32.patch file://0009-Added-support-for-ARM-NEON-based-bit-sliced-AES-in-X.patch file://0010-bsaes-armv7.pl-remove-byte-order-dependency-and-mino.patch file://0011-bsaes-armv7.pl-remove-partial-register-operations-in.patch file://0015-aes-asm-bsaes-.pl-improve-decrypt-performance.patch file://find.pl file://0001-Fix-for-TLS-record-tampering-bug-CVE-2013-4353.patch file://0001-Fix-DTLS-retransmission-from-previous-session.patch file://0001-Use-version-in-SSL_METHOD-not-SSL-structure.patch file://CVE-2014-0160.patch

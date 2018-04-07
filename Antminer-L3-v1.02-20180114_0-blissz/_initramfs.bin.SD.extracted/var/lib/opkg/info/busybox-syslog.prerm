@@ -1,0 +1,13 @@
+	# remove syslog
+	if test "x$D" = "x"; then
+		if test "$1" = "upgrade" -o "$1" = "remove"; then
+			/etc/init.d/syslog stop
+		fi
+	fi
+if type systemctl >/dev/null 2>/dev/null; then
+	if [ -z "$D" ]; then
+		systemctl stop busybox-syslog.service
+	fi
+
+	systemctl disable busybox-syslog.service
+fi

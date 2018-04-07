@@ -1,0 +1,13 @@
+Package: monitor-recobtn
+Version: 1.0-r0.415
+Description: monitor-recobtn version 1.0-r0
+ Daemon to monitor recovery button
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPL
+Architecture: armv7ahf-vfp-neon
+OE: monitor-recobtn
+Homepage: unknown
+Depends: libc6 (>= 2.17)
+Source: file://monitor-recobtn.c file://monitor-recobtn-c1.c file://init file://init-c1 file://factory_config_reset.sh file://COPYING

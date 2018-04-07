@@ -1,0 +1,25 @@
+{
+"pools" : [
+{
+"url" : "stratum-ltc.antpool.com:8888",
+"user" : "antminer_1",
+"pass" : "123"
+},
+{
+"url" : "stratum-ltc.antpool.com:443",
+"user" : "antminer_1",
+"pass" : "123"
+},
+{
+"url" : "stratum.f2pool.com:8888",
+"user" : "ant.123",
+"pass" : "123"
+}
+]
+,
+"api-listen" : true,
+"api-network" : true,
+"api-groups" : "A:stats:pools:devs:summary:version",
+"api-allow" : "A:0/0,W:*",
+"bitmain-freq" : "384"
+}

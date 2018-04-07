@@ -1,0 +1,13 @@
+Package: cgminer-l3p
+Version: 1.0-r1.4
+Description: cgminer-l3p version 1.0-r1
+ Cgminer DASH miner SW
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: CLOSED
+Architecture: armv7ahf-vfp-neon
+OE: cgminer-l3p
+Homepage: unknown
+Depends: libgcc1 (>= linaro-4.7), libtinfo5 (>= 5.9), libncurses5 (>= 5.9), libc6 (>= 2.17)
+Source: git://git@gitlab.bitmain.com/antminer/cgminer-ltc.git;protocol=https;branch=master

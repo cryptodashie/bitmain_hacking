@@ -1,0 +1,13 @@
+Package: netbase
+Version: 1:5.0-r0.2
+Description: Basic TCP/IP networking support
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking
+Section: base
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: GPLv2
+Architecture: armv7ahf-vfp-neon
+OE: netbase
+Homepage: http://packages.debian.org/netbase
+Source: ftp://ftp.debian.org/debian/pool/main/n/netbase/netbase_5.0.tar.gz file://hosts

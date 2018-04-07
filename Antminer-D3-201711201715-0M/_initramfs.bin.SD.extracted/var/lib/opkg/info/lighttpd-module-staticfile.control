@@ -1,0 +1,13 @@
+Package: lighttpd-module-staticfile
+Version: 1.4.32-r1.450
+Description: lighttpd version 1.4.32-r1
+ Lighttpd module for staticfile
+Section: net
+Priority: optional
+Maintainer: Angstrom Developers <angstrom-distro-devel@linuxtogo.org>
+License: BSD
+Architecture: armv7ahf-vfp-neon
+OE: lighttpd
+Homepage: http://www.lighttpd.net/
+Depends: libc6 (>= 2.17)
+Source: http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.32.tar.bz2 file://index.html.lighttpd file://lighttpd.conf file://lighttpd file://lighttpd.conf file://lighttpd-htdigest.user file://www file://www_miner file://www-ltc file://www-ltc-p file://www-dash file://www-sia

@@ -1,0 +1,12 @@
+/usr/bin/decode-dimms
+/usr/sbin/i2cget
+/usr/sbin/eeprog
+/usr/sbin/eeprom
+/usr/bin/decode-vaio
+/usr/sbin/i2c-stub-from-dump
+/usr/bin/ddcmon
+/usr/sbin/i2cdump
+/usr/sbin/i2cdetect
+/usr/sbin/eepromer
+/usr/bin/decode-edid
+/usr/sbin/i2cset
